@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- Red top strip -->
+<!-- Orange top strip -->
 <div class="top-strip"></div>
 
 <!-- Navigation -->
@@ -25,9 +25,9 @@
     <ul class="nav-links">
       <li><a href="index.html">PRD</a></li>
       <li><a href="user-stories.html" class="active">User Stories</a></li>
-      <li><a href="index.html#architecture">Architecture</a></li>
+      <li><a href="index.html#navigation">Navigation</a></li>
       <li><a href="index.html#features">Features</a></li>
-      <li><a href="index.html#design">Design System</a></li>
+      <li><a href="index.html#design">Design</a></li>
     </ul>
   </div>
 </nav>
@@ -38,24 +38,24 @@
     <div class="hero-badge">&#128203;</div>
     <div class="hero-text">
       <h1>USER <span class="accent">STORIES</span></h1>
-      <p>35 stories across 9 epics &mdash; organized by priority and implementation status.</p>
+      <p>33 stories across 8 epics &mdash; organized by priority (P0 must-have, P1 important, P2 nice-to-have).</p>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="num">35</div>
+        <div class="num">33</div>
         <div class="label">Stories</div>
       </div>
       <div class="hero-stat">
-        <div class="num">9</div>
+        <div class="num">8</div>
         <div class="label">Epics</div>
       </div>
       <div class="hero-stat">
-        <div class="num">34</div>
-        <div class="label">Done</div>
+        <div class="num">8</div>
+        <div class="label">P0</div>
       </div>
       <div class="hero-stat">
-        <div class="num">97%</div>
-        <div class="label">Complete</div>
+        <div class="num">19</div>
+        <div class="label">P1</div>
       </div>
     </div>
   </div>
@@ -64,12 +64,11 @@
 <!-- Summary Ticker -->
 <div class="ticker">
   <div class="ticker-inner">
-    <div class="ticker-item"><span class="ticker-label">P0</span> <span class="ticker-val">10 Stories</span></div>
-    <div class="ticker-item"><span class="ticker-label">P1</span> <span class="ticker-val">18 Stories</span></div>
-    <div class="ticker-item"><span class="ticker-label">P2</span> <span class="ticker-val">7 Stories</span></div>
-    <div class="ticker-item"><span class="ticker-label">Done</span> <span class="ticker-val">34</span></div>
-    <div class="ticker-item"><span class="ticker-label">Partial</span> <span class="ticker-val">1</span></div>
-    <div class="ticker-item"><span class="ticker-label">Planned</span> <span class="ticker-val">1</span></div>
+    <div class="ticker-item"><span class="ticker-label">P0</span> <span class="ticker-val">8 Stories</span></div>
+    <div class="ticker-item"><span class="ticker-label">P1</span> <span class="ticker-val">19 Stories</span></div>
+    <div class="ticker-item"><span class="ticker-label">P2</span> <span class="ticker-val">6 Stories</span></div>
+    <div class="ticker-item"><span class="ticker-label">Epics</span> <span class="ticker-val">8</span></div>
+    <div class="ticker-item"><span class="ticker-label">Total</span> <span class="ticker-val">33 Stories</span></div>
   </div>
 </div>
 
@@ -77,49 +76,29 @@
 <div class="page-wrap">
   <main class="main-content">
 
-    <!-- Overall Progress -->
+    <!-- Story Map Summary Table -->
     <div class="section-header">
       <div class="section-icon">&#128200;</div>
-      <h2>Overall Progress</h2>
+      <h2>Story Map Summary</h2>
     </div>
 
     <div class="card">
-      <div class="card-body">
-        <div style="display:flex; justify-content:space-between; margin-bottom:4px; font-size:13px; font-weight:600;">
-          <span>34 of 35 stories complete</span>
-          <span>97%</span>
-        </div>
-        <div class="progress-wrap">
-          <div class="progress-bar" style="width:97%"></div>
-        </div>
-        <div class="stat-highlights" style="margin-top:16px;">
-          <div class="stat-hl"><div class="hl-num" style="color:var(--green);">34</div><div class="hl-label">Done</div></div>
-          <div class="stat-hl"><div class="hl-num" style="color:var(--tangerine);">1</div><div class="hl-label">Partial</div></div>
-          <div class="stat-hl"><div class="hl-num" style="color:var(--blue);">1</div><div class="hl-label">Planned</div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Story Map Summary Table -->
-    <div class="card">
-      <div class="card-header"><h3>Story Map Summary</h3></div>
       <div class="card-body">
         <table class="stat-table">
           <thead>
-            <tr><th>Epic</th><th class="num-col">P0</th><th class="num-col">P1</th><th class="num-col">P2</th><th class="num-col">Done</th><th class="num-col">Partial</th><th class="num-col">Planned</th></tr>
+            <tr><th>Epic</th><th class="num-col">P0</th><th class="num-col">P1</th><th class="num-col">P2</th><th class="num-col">Total</th></tr>
           </thead>
           <tbody>
-            <tr><td>1. Auth & Account</td><td class="num-col">3</td><td class="num-col">4</td><td class="num-col">0</td><td class="num-col">7</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>2. Game Tracking</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">1</td><td class="num-col">4</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>3. Personal Stats</td><td class="num-col">1</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">4</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>4. All-Time Stats</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">1</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>5. Teams & Compare</td><td class="num-col">0</td><td class="num-col">4</td><td class="num-col">1</td><td class="num-col">5</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>6. Achievements</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>7. Stadiums</td><td class="num-col">0</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">0</td><td class="num-col">1</td><td class="num-col">1</td></tr>
-            <tr><td>8. Data Management</td><td class="num-col">2</td><td class="num-col">0</td><td class="num-col">0</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">0</td></tr>
-            <tr><td>9. Design & UX</td><td class="num-col">1</td><td class="num-col">3</td><td class="num-col">2</td><td class="num-col">6</td><td class="num-col">0</td><td class="num-col">0</td></tr>
+            <tr><td>1. Auth & Account</td><td class="num-col">3</td><td class="num-col">4</td><td class="num-col">0</td><td class="num-col">7</td></tr>
+            <tr><td>2. Game Tracking</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">1</td><td class="num-col">4</td></tr>
+            <tr><td>3. Personal Stats</td><td class="num-col">1</td><td class="num-col">3</td><td class="num-col">0</td><td class="num-col">4</td></tr>
+            <tr><td>4. All-Time Stats</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">1</td><td class="num-col">3</td></tr>
+            <tr><td>5. Teams & Compare</td><td class="num-col">0</td><td class="num-col">4</td><td class="num-col">1</td><td class="num-col">5</td></tr>
+            <tr><td>6. Achievements</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">0</td><td class="num-col">2</td></tr>
+            <tr><td>7. Stadiums</td><td class="num-col">0</td><td class="num-col">0</td><td class="num-col">2</td><td class="num-col">2</td></tr>
+            <tr><td>8. Design & UX</td><td class="num-col">1</td><td class="num-col">4</td><td class="num-col">1</td><td class="num-col">6</td></tr>
             <tr style="font-weight:700; border-top:2px solid var(--border-light);">
-              <td>Total</td><td class="num-col">10</td><td class="num-col">18</td><td class="num-col">7</td><td class="num-col">34</td><td class="num-col">1</td><td class="num-col">1</td>
+              <td>Total</td><td class="num-col">8</td><td class="num-col">19</td><td class="num-col">6</td><td class="num-col">33</td>
             </tr>
           </tbody>
         </table>
@@ -138,16 +117,15 @@
           <div class="story-meta">
             <span class="story-id">US-1.1</span>
             <span class="tag tag-p0">P0</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Email Registration</div>
           <p class="story-statement"><strong>As a</strong> new user, <strong>I want to</strong> create an account with email and password, <strong>so that</strong> my attendance data is saved and synced across devices.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Email, password, confirm password fields with validation</li>
-            <li><span class="check check-done">&#10003;</span> Password minimum 6 characters, must match confirmation</li>
-            <li><span class="check check-done">&#10003;</span> On success, user is logged in and directed to team picker</li>
-            <li><span class="check check-done">&#10003;</span> On failure, clear error message displayed</li>
-            <li><span class="check check-done">&#10003;</span> Account auto-creates a <code>user_profiles</code> row via DB trigger</li>
+          <ul class="feature-list">
+            <li>Email, password, and confirm password fields with validation</li>
+            <li>Password minimum 6 characters, must match confirmation</li>
+            <li>On success, user is logged in and directed to a favorite team picker</li>
+            <li>On failure, clear error message displayed</li>
+            <li>A user profile is automatically created on signup</li>
           </ul>
         </div>
       </div>
@@ -157,15 +135,14 @@
           <div class="story-meta">
             <span class="story-id">US-1.2</span>
             <span class="tag tag-p0">P0</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Email Sign-In</div>
           <p class="story-statement"><strong>As a</strong> returning user, <strong>I want to</strong> sign in with my email and password, <strong>so that</strong> I can access my tracked games and stats.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Email and password inputs</li>
-            <li><span class="check check-done">&#10003;</span> Loading state on sign-in button</li>
-            <li><span class="check check-done">&#10003;</span> On success, navigate to Home tab with profile hydrated</li>
-            <li><span class="check check-done">&#10003;</span> On failure, Alert with Supabase error message</li>
+          <ul class="feature-list">
+            <li>Email and password inputs</li>
+            <li>Loading indicator on sign-in button while authenticating</li>
+            <li>On success, navigate to Home tab with profile data loaded</li>
+            <li>On failure, display clear error message</li>
           </ul>
         </div>
       </div>
@@ -175,18 +152,16 @@
           <div class="story-meta">
             <span class="story-id">US-1.3</span>
             <span class="tag tag-p1">P1</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Google Sign-In</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> sign in with my Google account, <strong>so that</strong> I don't have to remember another password.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> "Continue with Google" button on login screen</li>
-            <li><span class="check check-done">&#10003;</span> "Sign up with Google" button on register screen</li>
-            <li><span class="check check-done">&#10003;</span> Opens Google consent screen in system browser</li>
-            <li><span class="check check-done">&#10003;</span> Redirects back to app with valid session</li>
-            <li><span class="check check-done">&#10003;</span> New Google users see the team picker step</li>
-            <li><span class="check check-done">&#10003;</span> Returning Google users go straight to Home</li>
-            <li><span class="check check-done">&#10003;</span> Auth provider tracked as 'google' in user store</li>
+          <ul class="feature-list">
+            <li>"Continue with Google" button on login screen</li>
+            <li>"Sign up with Google" button on register screen</li>
+            <li>Opens Google consent screen in browser</li>
+            <li>Returns to the app with a valid session</li>
+            <li>New Google users see the favorite team picker</li>
+            <li>Returning Google users go straight to Home</li>
           </ul>
         </div>
       </div>
@@ -196,16 +171,15 @@
           <div class="story-meta">
             <span class="story-id">US-1.4</span>
             <span class="tag tag-p1">P1</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Guest Access</div>
           <p class="story-statement"><strong>As a</strong> casual visitor, <strong>I want to</strong> browse the app without creating an account, <strong>so that</strong> I can explore before committing.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> "Continue without account" link on login screen</li>
-            <li><span class="check check-done">&#10003;</span> Guest can browse all tabs (games, teams, rankings)</li>
-            <li><span class="check check-done">&#10003;</span> Attempting to mark attendance shows "Sign In Required" Alert</li>
-            <li><span class="check check-done">&#10003;</span> Settings shows "Guest" label with "Sign In" button</li>
-            <li><span class="check check-done">&#10003;</span> Profile tab still renders with empty/default state</li>
+          <ul class="feature-list">
+            <li>"Continue without account" option on login screen</li>
+            <li>Guest can browse all tabs (games, teams, rankings)</li>
+            <li>Attempting to mark attendance prompts user to sign in</li>
+            <li>Settings shows "Guest" label with "Sign In" button</li>
+            <li>Profile tab renders with empty/default state</li>
           </ul>
         </div>
       </div>
@@ -215,16 +189,14 @@
           <div class="story-meta">
             <span class="story-id">US-1.5</span>
             <span class="tag tag-p0">P0</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Session Persistence</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want</strong> my session to survive closing and reopening the app, <strong>so that</strong> I don't have to log in every time.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Session stored in AsyncStorage via Supabase client</li>
-            <li><span class="check check-done">&#10003;</span> On cold start, existing session restored automatically</li>
-            <li><span class="check check-done">&#10003;</span> Favorite team and profile hydrated on session restore</li>
-            <li><span class="check check-done">&#10003;</span> Auto-refresh tokens prevent silent session expiry</li>
-            <li><span class="check check-done">&#10003;</span> Splash screen held until session check completes</li>
+          <ul class="feature-list">
+            <li>Session persists across app closes</li>
+            <li>On cold start, existing session restored automatically</li>
+            <li>No flash of login screen while session is being checked (splash screen shown)</li>
+            <li>Favorite team and profile loaded automatically on restore</li>
           </ul>
         </div>
       </div>
@@ -234,15 +206,13 @@
           <div class="story-meta">
             <span class="story-id">US-1.6</span>
             <span class="tag tag-p0">P0</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Sign Out</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> sign out of my account, <strong>so that</strong> I can switch accounts or secure my session.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Confirmation dialog before sign out</li>
-            <li><span class="check check-done">&#10003;</span> Clears Supabase session</li>
-            <li><span class="check check-done">&#10003;</span> Clears all Zustand user state</li>
-            <li><span class="check check-done">&#10003;</span> Redirects to login screen</li>
+          <ul class="feature-list">
+            <li>Confirmation dialog before sign out</li>
+            <li>Clears all user data from the app</li>
+            <li>Returns to login screen</li>
           </ul>
         </div>
       </div>
@@ -252,16 +222,15 @@
           <div class="story-meta">
             <span class="story-id">US-1.7</span>
             <span class="tag tag-p1">P1</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Favorite Team Selection (Onboarding)</div>
           <p class="story-statement"><strong>As a</strong> new user, <strong>I want to</strong> pick my favorite team during registration, <strong>so that</strong> the app personalizes my experience from the start.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Searchable team list with color indicators and conference labels</li>
-            <li><span class="check check-done">&#10003;</span> Selected team shown in colored gradient banner</li>
-            <li><span class="check check-done">&#10003;</span> Optional &mdash; "Skip" button available</li>
-            <li><span class="check check-done">&#10003;</span> Saves to Supabase user_profiles + Zustand store</li>
-            <li><span class="check check-done">&#10003;</span> Home screen banner and colors reflect selection immediately</li>
+          <ul class="feature-list">
+            <li>Searchable team list with team color indicators and conference labels</li>
+            <li>Selected team shown in a colored gradient banner preview</li>
+            <li>Optional &mdash; user can skip this step</li>
+            <li>Selection saved to user profile</li>
+            <li>Home screen banner and colors reflect the selection immediately</li>
           </ul>
         </div>
       </div>
@@ -271,16 +240,14 @@
           <div class="story-meta">
             <span class="story-id">US-1.8</span>
             <span class="tag tag-p1">P1</span>
-            <span class="tag tag-done">Done</span>
           </div>
           <div class="feature-title">Change Favorite Team (Settings)</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> change my favorite team in settings, <strong>so that</strong> my stats and banner reflect my current fandom.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Text input pre-filled with current favorite team</li>
-            <li><span class="check check-done">&#10003;</span> Save button persists to Supabase user_profiles</li>
-            <li><span class="check check-done">&#10003;</span> Updates both Zustand stores</li>
-            <li><span class="check check-done">&#10003;</span> Guest mode saves locally only with "sign in to sync" note</li>
-            <li><span class="check check-done">&#10003;</span> Home banner and profile update immediately</li>
+          <ul class="feature-list">
+            <li>Text input pre-filled with current favorite team</li>
+            <li>Save button persists the change to user profile</li>
+            <li>Guest mode saves locally only with "sign in to sync" note</li>
+            <li>Home banner and profile update immediately on save</li>
           </ul>
         </div>
       </div>
@@ -296,76 +263,79 @@
 
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-2.1</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-2.1</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">Search Games</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> search for games by season and team, <strong>so that</strong> I can find specific games I attended.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Season picker with year chips (1950&ndash;current)</li>
-            <li><span class="check check-done">&#10003;</span> Team filter with searchable dropdown</li>
-            <li><span class="check check-done">&#10003;</span> Results displayed as GameCards in a FlatList</li>
-            <li><span class="check check-done">&#10003;</span> Empty state when no results found</li>
-            <li><span class="check check-done">&#10003;</span> Season selection persisted across sessions</li>
+          <ul class="feature-list">
+            <li>Season picker with scrollable year chips (1950 through current year)</li>
+            <li>Team filter with searchable dropdown</li>
+            <li>Search button triggers results</li>
+            <li>Results displayed as a scrollable list of Game Cards</li>
+            <li>Empty state when no results found</li>
+            <li>Season selection remembered across sessions</li>
           </ul>
         </div>
       </div>
 
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-2.2</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-2.2</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">Mark Game as Attended</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> mark a game as attended, <strong>so that</strong> it's tracked in my personal stats.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Quick attend button on GameCard (+ icon)</li>
-            <li><span class="check check-done">&#10003;</span> Full attend button on game detail</li>
-            <li><span class="check check-done">&#10003;</span> Toggle behavior: tap again to un-attend</li>
-            <li><span class="check check-done">&#10003;</span> Saves to user_attendance table (RLS enforced)</li>
-            <li><span class="check check-done">&#10003;</span> Gold checkmark badge appears on attended GameCards</li>
-            <li><span class="check check-done">&#10003;</span> Requires authentication (Alert if guest)</li>
+          <ul class="feature-list">
+            <li>Quick-attend button on each Game Card (+ icon)</li>
+            <li>Full attend button on game detail screen ("I Attended This Game")</li>
+            <li>Toggle behavior: tap again to un-attend</li>
+            <li>Gold checkmark badge appears on attended Game Cards (with glow effect)</li>
+            <li>Requires sign-in &mdash; guests see a prompt to create an account</li>
           </ul>
         </div>
       </div>
 
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-2.3</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-2.3</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">View My Games</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see a list of all games I've attended, <strong>so that</strong> I can review my attendance history.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> "My Games" toggle on Games tab</li>
-            <li><span class="check check-done">&#10003;</span> Shows count header: "X games attended"</li>
-            <li><span class="check check-done">&#10003;</span> Chronological list of attended games</li>
-            <li><span class="check check-done">&#10003;</span> Pull-to-refresh</li>
-            <li><span class="check check-done">&#10003;</span> Empty state with guidance</li>
+          <ul class="feature-list">
+            <li>"My Games" toggle on Games tab</li>
+            <li>Header showing bold count: "X games attended"</li>
+            <li>Chronological list of attended games as Game Cards</li>
+            <li>Pull-to-refresh</li>
+            <li>Empty state with guidance to search for games</li>
           </ul>
         </div>
       </div>
 
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-2.4</span><span class="tag tag-p2">P2</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-2.4</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">Rate a Game</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> rate a game I attended on a 1&ndash;5 star scale, <strong>so that</strong> I can remember how much I enjoyed it.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Star rating UI on game detail (only when attended)</li>
-            <li><span class="check check-done">&#10003;</span> Tap a star to set rating</li>
-            <li><span class="check check-done">&#10003;</span> Persists to user_attendance.rating</li>
+          <ul class="feature-list">
+            <li>Star rating UI on game detail (only shown when user has marked attendance)</li>
+            <li>Tap a star to set the rating</li>
+            <li>Stars visually fill up to the selected rating</li>
+            <li>Rating persists and reloads when revisiting</li>
           </ul>
         </div>
       </div>
 
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-2.5</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-2.5</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">View Game Detail</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see comprehensive details about a specific game, <strong>so that</strong> I can relive the experience.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Team color gradient header with date and season info</li>
-            <li><span class="check check-done">&#10003;</span> Glassmorphic scoreboard with logos, rankings, scores</li>
-            <li><span class="check check-done">&#10003;</span> Score comparison bar (proportional)</li>
-            <li><span class="check check-done">&#10003;</span> Game info: stadium, attendance, excitement</li>
-            <li><span class="check check-done">&#10003;</span> Broadcast & conditions: weather, spread/O/U, TV</li>
-            <li><span class="check check-done">&#10003;</span> Quarter-by-quarter scoring table</li>
-            <li><span class="check check-done">&#10003;</span> Team names pressable &rarr; team profile</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see comprehensive details about a specific game, <strong>so that</strong> I can relive the experience or learn about games I missed.</p>
+          <ul class="feature-list">
+            <li>Team color gradient header with date and season info</li>
+            <li>Scoreboard with team logos, AP/Coaches rankings, and large score numbers</li>
+            <li>Winner highlighted with team color glow</li>
+            <li>Score comparison bar (proportional)</li>
+            <li>Game info: stadium name, attendance, excitement index, conference game flag</li>
+            <li>Broadcast &amp; conditions: weather, spread/over-under, TV network</li>
+            <li>Quarter-by-quarter scoring table</li>
+            <li>Team names tappable &mdash; navigate to that team's profile</li>
+            <li>Bowl/postseason label when applicable</li>
           </ul>
         </div>
       </div>
@@ -380,49 +350,53 @@
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-3.1</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-3.1</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">View Attendance Summary</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see an overview of my game attendance on the Home screen, <strong>so that</strong> I can quickly understand my CFB passport stats.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Hero stat: total games attended (big number)</li>
-            <li><span class="check check-done">&#10003;</span> Quick stats grid: stadiums, teams, conferences, decades</li>
-            <li><span class="check check-done">&#10003;</span> Favorite team W-L-T record</li>
-            <li><span class="check check-done">&#10003;</span> Game quality: closest game + biggest blowout</li>
-            <li><span class="check check-done">&#10003;</span> Conference breakdown bar chart</li>
+          <ul class="feature-list">
+            <li>Hero stat: total games attended (large, prominent number)</li>
+            <li>Quick stats grid: stadiums, teams, conferences, decades</li>
+            <li>Favorite team W-L-T record (when applicable)</li>
+            <li>Game quality: closest game + biggest blowout</li>
+            <li>Highlights: most watched team, home base stadium, average score, bowl games, season range</li>
+            <li>Conference breakdown bar chart</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-3.2</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-3.2</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Top Teams</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see which teams I've watched the most, <strong>so that</strong> I can understand my viewing patterns.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Top 5 teams section on Home dashboard</li>
-            <li><span class="check check-done">&#10003;</span> Each row: team logo, name, game count, W-L record</li>
-            <li><span class="check check-done">&#10003;</span> Tappable &rarr; navigates to team profile</li>
+          <ul class="feature-list">
+            <li>Top 5 teams section on Home dashboard</li>
+            <li>Each row: team logo, team name, game count, W-L record</li>
+            <li>Tappable &mdash; navigates to team profile</li>
+            <li>Full ranking available via Rankings tab ("Most Watched" category)</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-3.3</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-3.3</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Personal Record</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see my W-L-T record on the Profile screen, <strong>so that</strong> I know the home team's record at games I attended.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Stacked horizontal bar: green (W) + gold (T) + red (L)</li>
-            <li><span class="check check-done">&#10003;</span> Segment labels with counts</li>
+          <ul class="feature-list">
+            <li>Stacked horizontal bar: green (W) + gold (T) + red (L)</li>
+            <li>Segment labels with counts</li>
+            <li>Subtitle: "Home team record at your games"</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-3.4</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-3.4</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Stadiums Visited</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see how many unique stadiums I've visited, <strong>so that</strong> I can track my "stadium collecting" progress.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Profile section: unique venues count</li>
-            <li><span class="check check-done">&#10003;</span> Home base: most-visited venue with count</li>
+          <ul class="feature-list">
+            <li>Profile section showing unique venues count (large number)</li>
+            <li>Home base: most-visited venue name + visit count</li>
+            <li>Quick stats grid includes stadium count</li>
           </ul>
         </div>
       </div>
@@ -436,39 +410,42 @@
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-4.1</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-4.1</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Browse All-Time Rankings</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> view all-time college football rankings, <strong>so that</strong> I can explore historical team performance.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> 6 categories: Record, Wins, Bowl Games, Bowl Record, Weeks in Poll, Recruiting</li>
-            <li><span class="check check-done">&#10003;</span> Winsipedia-style bar chart (top 25): team-colored bars, logos on top, Y-axis labels, dashed grid lines</li>
-            <li><span class="check check-done">&#10003;</span> Interactive tooltip on press: team name, stat value, overall record</li>
-            <li><span class="check check-done">&#10003;</span> Bar highlight on press with lightened team color</li>
-            <li><span class="check check-done">&#10003;</span> Team store enrichment fallback for missing colors/logos</li>
-            <li><span class="check check-done">&#10003;</span> Tap team &rarr; team profile</li>
+          <ul class="feature-list">
+            <li>Rankings tab with "All-Time" toggle selected by default</li>
+            <li>6 category chips: Record, Wins, Bowl Games, Bowl Record, Weeks in AP Poll, Recruiting</li>
+            <li>Bar chart showing top 25 teams with team-colored bars and logos</li>
+            <li>Interactive bars: press to see tooltip with team name, stat value, and record</li>
+            <li>Full ranking list below the chart (top 50 teams)</li>
+            <li>Tapping a team navigates to their profile</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-4.2</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-4.2</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Browse Personal Rankings</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see rankings based on my attended games, <strong>so that</strong> I can see my personal "most" and "best" teams.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> 3 categories: Most Watched, Best Record, Bowl Games</li>
-            <li><span class="check check-done">&#10003;</span> Data filtered to user's attended games only</li>
+          <ul class="feature-list">
+            <li>Rankings tab with "My Stats" toggle</li>
+            <li>3 category chips: Most Watched, Best Record, Bowl Games</li>
+            <li>Same bar chart + list display as all-time rankings</li>
+            <li>Data filtered to only the user's attended games</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-4.3</span><span class="tag tag-p2">P2</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-4.3</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">View Ranking Detail</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> drill into a specific ranking category for the full list.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Full-page ranking screen with Winsipedia-style bar chart</li>
-            <li><span class="check check-done">&#10003;</span> Bar chart at top (team-colored bars + logos + interactive tooltip) + searchable list below</li>
-            <li><span class="check check-done">&#10003;</span> Same enrichment and tooltip behavior as main Rankings tab</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> drill into a specific ranking category, <strong>so that</strong> I can see the full list and search for teams.</p>
+          <ul class="feature-list">
+            <li>Full-page ranking screen for a single category</li>
+            <li>Bar chart at top</li>
+            <li>Searchable team list below</li>
+            <li>Tapping a team navigates to their profile</li>
           </ul>
         </div>
       </div>
@@ -482,58 +459,87 @@
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-5.1</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-5.1</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Browse Teams</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> browse all college football teams to explore any team's profile.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> A-Z / By Conference toggle</li>
-            <li><span class="check check-done">&#10003;</span> Search bar, letter filter, 3-column grid</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> browse all college football teams, <strong>so that</strong> I can find and explore any team's profile.</p>
+          <ul class="feature-list">
+            <li>Teams tab with A-Z / By Conference toggle</li>
+            <li>Search bar filters by school name, mascot, or conference</li>
+            <li>Horizontal letter filter bar (A-Z) in A-Z mode</li>
+            <li>3-column grid of team cards with logos</li>
+            <li>Conference grouping with headers in conference mode</li>
+            <li>Tapping a team navigates to their profile</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-5.2</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-5.2</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Team Profile (All-Time Stats)</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see a team's all-time Winsipedia-style statistics.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Header with logo, gradient banner</li>
-            <li><span class="check check-done">&#10003;</span> Stat cards: win%, wins, bowls, poll weeks, recruiting</li>
-            <li><span class="check check-done">&#10003;</span> "COMPARE TEAM" button</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see a team's all-time statistics, <strong>so that</strong> I can understand their historical performance.</p>
+          <ul class="feature-list">
+            <li>Team header with logo, name, mascot, and gradient banner in team's color</li>
+            <li>All-time stat cards (Winsipedia-style): win percentage, all-time wins, bowl wins, bowl games, AP poll weeks, recruiting rank</li>
+            <li>Large numbers with team color glow/accent</li>
+            <li>All UI on this page uses the team's own color (not the app's default accent)</li>
+            <li>"COMPARE TEAM" button navigates to compare screen</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-5.3</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-5.3</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Team Profile (Personal Stats)</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see my personal stats for a specific team.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Your Stats Cards (conditional)</li>
-            <li><span class="check check-done">&#10003;</span> H2H opponents with "My Games" toggle</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see my personal stats for a specific team, <strong>so that</strong> I know my record and history watching them.</p>
+          <ul class="feature-list">
+            <li>"Your Stats" section (only visible if signed in AND has attended games for this team)</li>
+            <li>Personal record (W-L-T), games watched, bowl games attended, stadiums visited</li>
+            <li>Stat cards use the team's own color</li>
+            <li>Head-to-head opponents list with "My Games" toggle</li>
+            <li>Game history with "My Games" toggle</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-5.4 &ndash; 5.5</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
-          <div class="feature-title">Head-to-Head & Game History</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> All-Time / My Games toggle for both sections</li>
-            <li><span class="check check-done">&#10003;</span> Opponent list with logos and W-L-T</li>
-            <li><span class="check check-done">&#10003;</span> Game history grouped by season</li>
+          <div class="story-meta"><span class="story-id">US-5.4</span><span class="tag tag-p1">P1</span></div>
+          <div class="feature-title">View Head-to-Head Opponents</div>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see a team's record against all opponents, <strong>so that</strong> I can find rivalries and matchup history.</p>
+          <ul class="feature-list">
+            <li>Toggle: "All-Time" | "My Games"</li>
+            <li>Opponent list with logos and W-L-T records</li>
+            <li>Records color-coded: green for winning, red for losing</li>
+            <li>Sorted by total games played (most first)</li>
+            <li>Tapping an opponent opens the Compare screen</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-5.6</span><span class="tag tag-p2">P2</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-5.5</span><span class="tag tag-p1">P1</span></div>
+          <div class="feature-title">View Team Game History</div>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see a team's full game history organized by season, <strong>so that</strong> I can browse past results.</p>
+          <ul class="feature-list">
+            <li>Toggle: "All Games" | "My Games"</li>
+            <li>Grouped by season with headers showing year + overall record</li>
+            <li>Season divider lines use the team's color</li>
+            <li>Game result rows: date, opponent, score, home/away</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card story-card">
+        <div class="card-body">
+          <div class="story-meta"><span class="story-id">US-5.6</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">Compare Two Teams</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> compare two teams head-to-head with historical and personal data.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Two team pickers</li>
-            <li><span class="check check-done">&#10003;</span> Overall H2H bar + stat comparison grid</li>
-            <li><span class="check check-done">&#10003;</span> Your H2H (conditional) + game history</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> compare two teams head-to-head, <strong>so that</strong> I can see how they stack up historically and in my experience.</p>
+          <ul class="feature-list">
+            <li>Two team pickers with search/autocomplete</li>
+            <li>Pre-populated when navigating from a team profile</li>
+            <li>Overall H2H bar: proportional W-L with both team logos</li>
+            <li>Win counts + current win streak</li>
+            <li>Stat comparison grid: side-by-side cards for win%, wins, bowls, poll weeks</li>
+            <li>Your H2H section (only if user attended matchups between these teams)</li>
+            <li>Game history toggle: "All Games" | "My Games"</li>
           </ul>
         </div>
       </div>
@@ -547,23 +553,26 @@
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-6.1</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-6.1</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Earn Achievements</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> earn "Helmet Sticker" achievements for attendance milestones.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> 15 defined sticker categories</li>
-            <li><span class="check check-done">&#10003;</span> Automatic unlock when criteria met</li>
-            <li><span class="check check-done">&#10003;</span> Stored in achievements table (RLS enforced)</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> earn "Helmet Sticker" achievements for attendance milestones, <strong>so that</strong> I'm motivated to attend more games and diversify my experiences.</p>
+          <ul class="feature-list">
+            <li>15 sticker categories across game count, stadium, era, and special milestones (see PRD section 3.11)</li>
+            <li>Automatically awarded when criteria are met</li>
+            <li>Persist across sessions</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-6.2</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-6.2</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">View Achievement Progress</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> "X / Y" unlocked count</li>
-            <li><span class="check check-done">&#10003;</span> Gradient progress bar</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see my helmet sticker progress on my profile, <strong>so that</strong> I know how many I've earned and how many remain.</p>
+          <ul class="feature-list">
+            <li>Profile section: "HELMET STICKERS"</li>
+            <li>Count display: "X / Y" unlocked</li>
+            <li>Gradient progress bar</li>
+            <li>Subtitle: remaining count or encouragement message</li>
           </ul>
         </div>
       </div>
@@ -577,135 +586,116 @@
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-7.1</span><span class="tag tag-p2">P2</span><span class="tag tag-partial">Partial</span></div>
+          <div class="story-meta"><span class="story-id">US-7.1</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">Browse Stadiums</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> browse college football stadiums to learn about venues and plan future trips.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Stadiums tab accessible via navigation</li>
-            <li><span class="check check-done">&#10003;</span> Search by name, city, state</li>
-            <li><span class="check check-done">&#10003;</span> "My Stadiums" + "All Stadiums" sections</li>
-            <li><span class="check check-done">&#10003;</span> Stadium cards: name, city/state, capacity, year, surface</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> browse college football stadiums, <strong>so that</strong> I can learn about venues and plan future trips.</p>
+          <ul class="feature-list">
+            <li>Search by name, city, or state</li>
+            <li>"My Stadiums" section showing visited venues with visit counts</li>
+            <li>"All Stadiums" section showing the full list</li>
+            <li>Stadium cards: name, city/state, capacity, year built, surface type</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-7.2</span><span class="tag tag-p2">P2</span><span class="tag tag-planned">Planned</span></div>
+          <div class="story-meta"><span class="story-id">US-7.2</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">View Stadium Detail</div>
-          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see detailed information about a specific stadium.</p>
-          <ul class="checklist">
-            <li><span class="check check-open">&nbsp;</span> Stadium name, location, capacity</li>
-            <li><span class="check check-open">&nbsp;</span> Surface type, dome/open air</li>
-            <li><span class="check check-open">&nbsp;</span> Home team(s)</li>
-            <li><span class="check check-open">&nbsp;</span> Games attended at this venue</li>
-            <li><span class="check check-open">&nbsp;</span> Home field advantage stats</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see detailed information about a specific stadium, <strong>so that</strong> I can learn about the venue and see my history there.</p>
+          <ul class="feature-list">
+            <li>Stadium name, location, capacity</li>
+            <li>Surface type, dome/open air indicator</li>
+            <li>Home team(s)</li>
+            <li>Games I attended at this venue</li>
+            <li>Home field advantage stats</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- ===== EPIC 8: Data ===== -->
+    <!-- ===== EPIC 8: Design & UX ===== -->
     <div id="epic-8" class="epic-header">
       <div class="epic-num">8</div>
-      <h2>Data Management</h2>
+      <h2>Design & User Experience</h2>
     </div>
     <div class="epic-body">
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-8.1</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
-          <div class="feature-title">Initial Data Population</div>
-          <p class="story-statement"><strong>As a</strong> developer/admin, <strong>I want to</strong> bulk import all historical college football data.</p>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> CSV import for conferences, teams, games</li>
-            <li><span class="check check-done">&#10003;</span> CFBD API enrichment for 15+ categories</li>
-            <li><span class="check check-done">&#10003;</span> Historical coverage: games from 1869</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card story-card">
-        <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-8.2</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
-          <div class="feature-title">Ongoing Score Refresh</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Auto-detect seasons with missing scores</li>
-            <li><span class="check check-done">&#10003;</span> --games-only flag for quick updates</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card story-card">
-        <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-8.3</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
-          <div class="feature-title">Delete All Users (Admin)</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> SQL migration cleans user tables + auth.users</li>
-            <li><span class="check check-done">&#10003;</span> Game/team/venue data NOT affected</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===== EPIC 9: Design ===== -->
-    <div id="epic-9" class="epic-header">
-      <div class="epic-num">9</div>
-      <h2>Design & UX</h2>
-    </div>
-    <div class="epic-body">
-      <div class="card story-card">
-        <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.1</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-8.1</span><span class="tag tag-p0">P0</span></div>
           <div class="feature-title">Dark Theme</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Dark Matter palette: background #0A0A0F, surface #1A1A2E, primary #E88F3D (orange), secondary #367FA9 (blue)</li>
-            <li><span class="check check-done">&#10003;</span> Glassmorphic cards, glow effects, gradient banners</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want</strong> a dark-themed premium sports app aesthetic, <strong>so that</strong> the app feels polished and is comfortable to use.</p>
+          <ul class="feature-list">
+            <li>Dark background throughout all screens</li>
+            <li>Frosted glass card style (semi-transparent with subtle borders)</li>
+            <li>Glow effects on stat numbers and achievement badges</li>
+            <li>Gradient banners and buttons</li>
+            <li>Team color theming on relevant screens</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.2</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-8.2</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Team Color Theming</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Home banner, game detail, team profile all themed</li>
-            <li><span class="check check-done">&#10003;</span> GameCard color strips, score bars, winner glow</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want</strong> screens to be themed with team colors, <strong>so that</strong> the experience feels personalized and engaging.</p>
+          <ul class="feature-list">
+            <li>Home banner uses favorite team's color</li>
+            <li>Game detail header uses home team's color</li>
+            <li>Team profile uses the team's own color for all stat cards, toggles, dividers, and buttons</li>
+            <li>Game cards show both teams' colors as side strips</li>
+            <li>Score comparison bars use team colors</li>
+            <li>Rankings bar chart uses each team's own color</li>
+            <li>Winner highlighted with team color glow</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.3</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-8.3</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Team Logos</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> TeamLogo component (sm/md/lg/xl) with fallback</li>
-            <li><span class="check check-done">&#10003;</span> Used across all screens: GameCards, detail, grid, rankings, dashboard</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see team logos throughout the app, <strong>so that</strong> teams are instantly recognizable.</p>
+          <ul class="feature-list">
+            <li>Logos displayed in multiple sizes (small through extra-large)</li>
+            <li>Colored circle fallback with team abbreviation when no logo is available</li>
+            <li>Logos appear on: game cards, game detail, team grid, rankings, dashboard, profile</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.4</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
-          <div class="feature-title">Winsipedia-Inspired Stat Cards</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> WinsipediaStatCard: big number + label + rank + glow</li>
-            <li><span class="check check-done">&#10003;</span> HeadToHeadBar: proportional comparison bars</li>
-            <li><span class="check check-done">&#10003;</span> RankingBarChart: Winsipedia-style with team-colored bars, logos, tooltips, Y-axis labels, grid lines</li>
+          <div class="story-meta"><span class="story-id">US-8.4</span><span class="tag tag-p1">P1</span></div>
+          <div class="feature-title">Winsipedia-Inspired Stat Display</div>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want</strong> stats displayed like Winsipedia (big bold numbers, team colors, visual weight), <strong>so that</strong> statistics feel impactful and visually impressive.</p>
+          <ul class="feature-list">
+            <li>Stat cards with large bold numbers + small label underneath</li>
+            <li>Team color glow/shadow effect on stat numbers</li>
+            <li>Head-to-head bars: proportional W-L bar with team logos at each end</li>
+            <li>Rankings bar chart: team-colored vertical bars with logos, interactive tooltips on press</li>
+            <li>Compact card mode for grid layouts</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.5</span><span class="tag tag-p1">P1</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-8.5</span><span class="tag tag-p1">P1</span></div>
           <div class="feature-title">Empty States</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Icons + descriptive text + action buttons</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> see helpful guidance when there's no data to display, <strong>so that</strong> I know what to do next.</p>
+          <ul class="feature-list">
+            <li>Home: "No Games Yet" with call-to-action to Games tab</li>
+            <li>My Games: "No Games Yet &mdash; Search for games to get started"</li>
+            <li>Search results: "No games found"</li>
+            <li>All empty states include an icon, descriptive text, and action button where appropriate</li>
           </ul>
         </div>
       </div>
       <div class="card story-card">
         <div class="card-body">
-          <div class="story-meta"><span class="story-id">US-9.6</span><span class="tag tag-p2">P2</span><span class="tag tag-done">Done</span></div>
+          <div class="story-meta"><span class="story-id">US-8.6</span><span class="tag tag-p2">P2</span></div>
           <div class="feature-title">Pull-to-Refresh</div>
-          <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> RefreshControl on Home, Games, Teams, Profile</li>
+          <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> pull down to refresh data on any list screen, <strong>so that</strong> I can see the latest information.</p>
+          <ul class="feature-list">
+            <li>Pull-to-refresh available on Home, Games, Teams, and Profile tabs</li>
+            <li>Spinner uses the app's primary accent color</li>
           </ul>
         </div>
       </div>
@@ -726,8 +716,7 @@
           <li><a href="#epic-5">5. Teams & Compare</a></li>
           <li><a href="#epic-6">6. Achievements</a></li>
           <li><a href="#epic-7">7. Stadiums</a></li>
-          <li><a href="#epic-8">8. Data Management</a></li>
-          <li><a href="#epic-9">9. Design & UX</a></li>
+          <li><a href="#epic-8">8. Design & UX</a></li>
         </ul>
       </div>
     </div>
@@ -736,39 +725,36 @@
       <div class="sb-header">Priority Legend</div>
       <div class="sb-body">
         <div style="display:flex; flex-direction:column; gap:8px;">
-          <div><span class="tag tag-p0">P0</span> Must-have (10)</div>
-          <div><span class="tag tag-p1">P1</span> Important (18)</div>
-          <div><span class="tag tag-p2">P2</span> Nice-to-have (7)</div>
+          <div><span class="tag tag-p0">P0</span> Must-have (8)</div>
+          <div><span class="tag tag-p1">P1</span> Important (19)</div>
+          <div><span class="tag tag-p2">P2</span> Nice-to-have (6)</div>
         </div>
       </div>
     </div>
 
     <div class="sidebar-card">
-      <div class="sb-header">Status Legend</div>
+      <div class="sb-header">Story Counts</div>
       <div class="sb-body">
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <div><span class="tag tag-done">Done</span> Implemented (34)</div>
-          <div><span class="tag tag-partial">Partial</span> In progress (1)</div>
-          <div><span class="tag tag-planned">Planned</span> Not started (1)</div>
-        </div>
+        <ul>
+          <li><strong>33</strong> Total user stories</li>
+          <li><strong>8</strong> Epics</li>
+          <li><strong>8</strong> P0 must-haves</li>
+          <li><strong>19</strong> P1 important</li>
+          <li><strong>6</strong> P2 nice-to-haves</li>
+        </ul>
       </div>
     </div>
 
     <div class="sidebar-card">
-      <div class="sb-header">Completion by Priority</div>
+      <div class="sb-header">Largest Epics</div>
       <div class="sb-body">
-        <div style="margin-bottom:12px;">
-          <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;"><span>P0 (Must-Have)</span><span>100%</span></div>
-          <div class="progress-wrap"><div class="progress-bar red" style="width:100%"></div></div>
-        </div>
-        <div style="margin-bottom:12px;">
-          <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;"><span>P1 (Important)</span><span>100%</span></div>
-          <div class="progress-wrap"><div class="progress-bar gold" style="width:100%"></div></div>
-        </div>
-        <div>
-          <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;"><span>P2 (Nice-to-Have)</span><span>71%</span></div>
-          <div class="progress-wrap"><div class="progress-bar" style="width:71%"></div></div>
-        </div>
+        <ul>
+          <li><strong>7</strong> Auth & Account</li>
+          <li><strong>6</strong> Design & UX</li>
+          <li><strong>5</strong> Teams & Compare</li>
+          <li><strong>4</strong> Game Tracking</li>
+          <li><strong>4</strong> Personal Stats</li>
+        </ul>
       </div>
     </div>
   </aside>
@@ -777,7 +763,7 @@
 <!-- Footer -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>CFB Stat Tracker &mdash; User Stories v1.0</p>
+    <p>CFB Stat Tracker &mdash; User Stories v2.0</p>
     <p>Last updated: February 16, 2026</p>
   </div>
 </footer>

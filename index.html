@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- Red top strip -->
+<!-- Orange top strip -->
 <div class="top-strip"></div>
 
 <!-- Navigation -->
@@ -25,9 +25,9 @@
     <ul class="nav-links">
       <li><a href="index.html" class="active">PRD</a></li>
       <li><a href="user-stories.html">User Stories</a></li>
-      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#navigation">Navigation</a></li>
       <li><a href="#features">Features</a></li>
-      <li><a href="#design">Design System</a></li>
+      <li><a href="#design">Design</a></li>
     </ul>
   </div>
 </nav>
@@ -38,11 +38,11 @@
     <div class="hero-badge">&#127944;</div>
     <div class="hero-text">
       <h1>PRODUCT <span class="accent">REQUIREMENTS</span></h1>
-      <p>Your personal CFB passport — track every game, earn achievements, explore stats from 1869 to today.</p>
+      <p>Your personal CFB passport &mdash; track every game, earn achievements, explore stats from 1869 to today.</p>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="num">v1.0</div>
+        <div class="num">v2.0</div>
         <div class="label">Version</div>
       </div>
       <div class="hero-stat">
@@ -61,17 +61,15 @@
   </div>
 </section>
 
-<!-- Tech Ticker -->
+<!-- Ticker -->
 <div class="ticker">
   <div class="ticker-inner">
-    <div class="ticker-item"><span class="ticker-label">Framework</span> <span class="ticker-val">Expo 54</span></div>
-    <div class="ticker-item"><span class="ticker-label">Language</span> <span class="ticker-val">TypeScript</span></div>
-    <div class="ticker-item"><span class="ticker-label">Backend</span> <span class="ticker-val">Supabase</span></div>
-    <div class="ticker-item"><span class="ticker-label">State</span> <span class="ticker-val">Zustand</span></div>
+    <div class="ticker-item"><span class="ticker-label">Platform</span> <span class="ticker-val">iOS + Android</span></div>
     <div class="ticker-item"><span class="ticker-label">Auth</span> <span class="ticker-val">Email + Google</span></div>
-    <div class="ticker-item"><span class="ticker-label">Data</span> <span class="ticker-val">CFBD API</span></div>
-    <div class="ticker-item"><span class="ticker-label">Fonts</span> <span class="ticker-val">Teko + Gudea</span></div>
-    <div class="ticker-item"><span class="ticker-label">Theme</span> <span class="ticker-val">Dark Glass</span></div>
+    <div class="ticker-item"><span class="ticker-label">Data</span> <span class="ticker-val">1869 &ndash; Present</span></div>
+    <div class="ticker-item"><span class="ticker-label">Stickers</span> <span class="ticker-val">15 Achievements</span></div>
+    <div class="ticker-item"><span class="ticker-label">Theme</span> <span class="ticker-val">Dark Premium</span></div>
+    <div class="ticker-item"><span class="ticker-label">Inspired By</span> <span class="ticker-val">Winsipedia</span></div>
   </div>
 </div>
 
@@ -91,7 +89,7 @@
         <span class="tag tag-section">Core</span>
       </div>
       <div class="card-body">
-        <p>CFB Stat Tracker is a personal "CFB passport" &mdash; a mobile app that lets college football fans track every game they've attended, earn achievements, and explore both personal and all-time statistics. Inspired by <strong>Winsipedia's</strong> visual stat presentation, the app serves as a stats powerhouse with dual-layer data: all-time historical records AND personalized stats filtered to the user's attended games.</p>
+        <p>CFB Stat Tracker is a personal "CFB Passport" &mdash; a mobile app that lets college football fans track every game they've attended, earn achievements, and explore both personal and all-time statistics. Inspired by <strong>Winsipedia's</strong> visual presentation of data, the app is a stats powerhouse with dual-layer information: all-time historical records AND personalized stats filtered to the user's attended games.</p>
       </div>
     </div>
 
@@ -120,9 +118,9 @@
       </div>
       <div class="card-body">
         <ul class="feature-list">
-          <li>College football fans who regularly attend games (in-person)</li>
-          <li>Alumni tracking their lifetime of game attendance across decades</li>
-          <li>Stat enthusiasts who want Winsipedia-style data on their phone</li>
+          <li>College football fans who regularly attend games in person</li>
+          <li>Alumni tracking a lifetime of game attendance across decades</li>
+          <li>Stat enthusiasts who want Winsipedia-style data in their pocket</li>
           <li>Fans who want to discover patterns in their attendance history</li>
         </ul>
       </div>
@@ -136,127 +134,28 @@
         <ul class="feature-list">
           <li><strong>Track:</strong> Mark every game you've attended, rate it, add notes</li>
           <li><strong>Discover:</strong> See your personal W-L record, most-watched teams, stadiums visited</li>
-          <li><strong>Explore:</strong> Browse all-time college football stats, head-to-head records, rankings</li>
-          <li><strong>Earn:</strong> Unlock Helmet Sticker achievements for attendance milestones</li>
+          <li><strong>Explore:</strong> Browse all-time college football stats, head-to-head records, and rankings</li>
+          <li><strong>Earn:</strong> Unlock "Helmet Sticker" achievements for attendance milestones</li>
           <li><strong>Compare:</strong> Side-by-side team comparisons with both historical and personal data</li>
         </ul>
       </div>
     </div>
 
-    <!-- Section 2: Technical Architecture -->
-    <div id="architecture" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">2</div>
-      <h2>Technical Architecture</h2>
-    </div>
-
     <div class="card">
       <div class="card-header">
-        <h3>Tech Stack</h3>
+        <h3>Platform</h3>
       </div>
       <div class="card-body">
-        <table class="stat-table">
-          <thead>
-            <tr><th>Layer</th><th>Technology</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Framework</td><td><span class="tech-badge highlight">Expo 54</span> + <span class="tech-badge">React Native 0.81</span></td></tr>
-            <tr><td>Language</td><td><span class="tech-badge highlight">TypeScript</span> (strict)</td></tr>
-            <tr><td>Navigation</td><td><span class="tech-badge">Expo Router</span> (file-based)</td></tr>
-            <tr><td>Backend</td><td><span class="tech-badge highlight">Supabase</span> (PostgreSQL + Auth + RLS)</td></tr>
-            <tr><td>State Management</td><td><span class="tech-badge">Zustand</span> (3 stores)</td></tr>
-            <tr><td>Auth</td><td><span class="tech-badge">Email/password</span> + <span class="tech-badge">Google OAuth</span></td></tr>
-            <tr><td>Data Source</td><td><span class="tech-badge highlight">CFBD API</span></td></tr>
-            <tr><td>Fonts</td><td><span class="tech-badge">Teko</span> (headings) + <span class="tech-badge">Gudea</span> (body)</td></tr>
-            <tr><td>Styling</td><td><span class="tech-badge">Dark glassmorphic</span> + <span class="tech-badge">expo-linear-gradient</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Data Architecture</h3>
-        <span class="tag tag-section">Supabase PostgreSQL</span>
-      </div>
-      <div class="card-body">
-        <p><strong>Core tables</strong> (RLS-enforced user data isolation):</p>
-        <table class="stat-table">
-          <thead>
-            <tr><th>Table</th><th>Description</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>conferences</code></td><td>FBS/FCS conference metadata</td></tr>
-            <tr><td><code>teams</code></td><td>All teams with colors, logos, location, venue info</td></tr>
-            <tr><td><code>games</code></td><td>Every game from 1869&ndash;present (scores, ELO, attendance, excitement)</td></tr>
-            <tr><td><code>venues</code></td><td>Stadium metadata (capacity, location, surface type)</td></tr>
-            <tr><td><code>user_attendance</code></td><td>User-to-game mapping (RLS: user sees only their own)</td></tr>
-            <tr><td><code>user_profiles</code></td><td>User preferences (favorite_team, auto-created on signup)</td></tr>
-            <tr><td><code>achievements</code></td><td>Unlocked Helmet Stickers (RLS: user sees only their own)</td></tr>
-          </tbody>
-        </table>
-        <p style="margin-top: 16px;"><strong>Enrichment tables</strong> (public read-only):</p>
-        <table class="stat-table">
-          <thead>
-            <tr><th>Table</th><th>Coverage</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>betting_lines</code></td><td>Spread, O/U, moneylines (2003+)</td></tr>
-            <tr><td><code>game_weather</code></td><td>Temperature, wind, conditions (2004+)</td></tr>
-            <tr><td><code>game_media</code></td><td>TV network/outlet</td></tr>
-            <tr><td><code>rankings</code></td><td>AP/Coaches poll history (1936+)</td></tr>
-            <tr><td><code>ratings_sp / elo / srs</code></td><td>Advanced analytics</td></tr>
-            <tr><td><code>coaches</code></td><td>Head coach records (1950+)</td></tr>
-            <tr><td><code>recruiting</code></td><td>Team recruiting rankings (2000+)</td></tr>
-            <tr><td><code>draft_picks</code></td><td>NFL draft history (1960+)</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>State Management</h3>
-      </div>
-      <div class="card-body">
-        <table class="stat-table">
-          <thead>
-            <tr><th>Store</th><th>Persisted</th><th>Purpose</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>useUserStore</code></td><td>No (from Supabase)</td><td>Auth state, session tracking, favorite team</td></tr>
-            <tr><td><code>useGameStore</code></td><td>Yes (AsyncStorage)</td><td>Search filters, API key</td></tr>
-            <tr><td><code>useTeamStore</code></td><td>Yes (AsyncStorage)</td><td>Team metadata cache (logos, colors)</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h3>Authentication</h3>
-      </div>
-      <div class="card-body">
-        <p><strong>Providers:</strong> Email/password (native Supabase auth) + Google OAuth (expo-auth-session + expo-web-browser)</p>
-        <p><strong>Session management:</strong></p>
         <ul class="feature-list">
-          <li>Persisted to AsyncStorage via Supabase client</li>
-          <li>Auto-refresh tokens enabled</li>
-          <li><code>isSessionLoaded</code> flag gates navigation until initial session check completes</li>
-          <li><code>onAuthStateChange</code> listener hydrates user profile on SIGNED_IN and TOKEN_REFRESHED</li>
-        </ul>
-        <p style="margin-top: 12px;"><strong>RLS enforcement:</strong></p>
-        <ul class="feature-list">
-          <li><code>user_attendance</code>: Full CRUD scoped to <code>auth.uid() = user_id</code></li>
-          <li><code>achievements</code>: SELECT + INSERT scoped to <code>auth.uid() = user_id</code></li>
-          <li><code>user_profiles</code>: SELECT + UPDATE + INSERT scoped to <code>auth.uid() = id</code></li>
-          <li>All other tables: Public read-only</li>
+          <li>Mobile app (iOS and Android)</li>
+          <li>Dark-themed, premium sports app aesthetic</li>
         </ul>
       </div>
     </div>
 
-    <!-- Section 3: Navigation -->
+    <!-- Section 2: Navigation -->
     <div id="navigation" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">3</div>
+      <div class="section-icon">2</div>
       <h2>Navigation & Information Architecture</h2>
     </div>
 
@@ -280,33 +179,50 @@
         <h3>Screen Map</h3>
       </div>
       <div class="card-body">
+        <p><strong>Authentication:</strong></p>
         <table class="stat-table">
           <thead>
-            <tr><th>Route</th><th>Screen</th><th>Description</th></tr>
+            <tr><th>Screen</th><th>Description</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>(auth)/login</code></td><td>Login</td><td>Email/password + Google OAuth + guest access</td></tr>
-            <tr><td><code>(auth)/register</code></td><td>Register</td><td>Two-step: credentials &rarr; team picker</td></tr>
-            <tr><td><code>(tabs)/index</code></td><td>Dashboard</td><td>Hero stat, stats grid, top teams, conferences</td></tr>
-            <tr><td><code>(tabs)/games</code></td><td>Games</td><td>Search/My Games toggle, game cards, filters</td></tr>
-            <tr><td><code>(tabs)/teams</code></td><td>Teams</td><td>A-Z/Conference toggle, search, 3-column grid</td></tr>
-            <tr><td><code>(tabs)/rankings</code></td><td>Rankings</td><td>All-Time/My Stats toggle, bar charts</td></tr>
-            <tr><td><code>(tabs)/profile</code></td><td>Profile</td><td>Avatar, stats, record bar, achievements</td></tr>
-            <tr><td><code>game/[id]</code></td><td>Game Detail</td><td>Scoreboard, weather, betting, line scores</td></tr>
-            <tr><td><code>team/[name]</code></td><td>Team Profile</td><td>All-time stats, H2H, game history</td></tr>
-            <tr><td><code>compare</code></td><td>Compare</td><td>Head-to-head stat grid + game history</td></tr>
-            <tr><td><code>rankings/[cat]</code></td><td>Ranking Detail</td><td>Bar chart + searchable list</td></tr>
-            <tr><td><code>stadium/[id]</code></td><td>Stadium Detail</td><td>Venue info and history</td></tr>
-            <tr><td><code>settings</code></td><td>Settings</td><td>Account, favorite team, about</td></tr>
+            <tr><td>Login</td><td>Email/password sign-in, Google sign-in, guest access</td></tr>
+            <tr><td>Register</td><td>Two-step: create account, then pick favorite team</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 16px;"><strong>Main Tabs:</strong></p>
+        <table class="stat-table">
+          <thead>
+            <tr><th>Screen</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Home</td><td>Personal dashboard (hero stat, stats grid, top teams, conferences)</td></tr>
+            <tr><td>Games</td><td>Search games / view "My Games", game cards with quick-attend</td></tr>
+            <tr><td>Teams</td><td>Browse A-Z or by conference, 3-column grid with logos</td></tr>
+            <tr><td>Rankings</td><td>All-Time / My Stats toggle, category chips, bar charts</td></tr>
+            <tr><td>Profile</td><td>Avatar, stats summary, record bar, stadiums, helmet stickers</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 16px;"><strong>Detail Screens:</strong></p>
+        <table class="stat-table">
+          <thead>
+            <tr><th>Screen</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Game Detail</td><td>Full scoreboard, weather, betting, line scores, attendance toggle</td></tr>
+            <tr><td>Team Profile</td><td>All-time stats, personal stats, head-to-head, game history</td></tr>
+            <tr><td>Compare</td><td>Head-to-head team comparison with stat grid and game history</td></tr>
+            <tr><td>Ranking Detail</td><td>Full ranking for a single category (bar chart + searchable list)</td></tr>
+            <tr><td>Stadium Detail</td><td>Stadium info and user's history at that venue</td></tr>
+            <tr><td>Settings</td><td>Account management, favorite team, about</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Section 4: Features -->
+    <!-- Section 3: Features -->
     <div id="features" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">4</div>
-      <h2>Feature Specifications</h2>
+      <div class="section-icon">3</div>
+      <h2>Feature Requirements</h2>
       <span class="count-badge">44 Features</span>
     </div>
 
@@ -321,10 +237,10 @@
           <div class="feature-id">F-AUTH-01</div>
           <div class="feature-title">Email/Password Sign-In</div>
           <ul class="feature-list">
-            <li>Input: email + password</li>
-            <li>Validation: both required, email format</li>
-            <li>On success: set user store, navigate to Home</li>
-            <li>On failure: Alert with Supabase error message</li>
+            <li>User enters email and password to sign in</li>
+            <li>Both fields required, email must be valid format</li>
+            <li>On success: navigate to Home with user data loaded</li>
+            <li>On failure: show clear error message</li>
           </ul>
         </div>
       </div>
@@ -333,22 +249,23 @@
           <div class="feature-id">F-AUTH-02</div>
           <div class="feature-title">Email/Password Registration</div>
           <ul class="feature-list">
-            <li><strong>Step 1:</strong> email + password + confirm password (6+ chars, must match)</li>
-            <li><strong>Step 2:</strong> Favorite team picker &mdash; searchable team list with color dots + conference labels</li>
-            <li>Selected team shown in gradient banner, optional (Skip button)</li>
-            <li>Saves to <code>user_profiles.favorite_team</code> + Zustand</li>
+            <li><strong>Step 1:</strong> Email + password + confirm password (6+ chars, must match)</li>
+            <li><strong>Step 2:</strong> Favorite team picker &mdash; searchable team list with color dots and conference labels</li>
+            <li>Selected team shown in a colored gradient banner preview</li>
+            <li>Optional &mdash; user can skip the team picker step</li>
+            <li>Selection saved to user profile</li>
           </ul>
         </div>
       </div>
       <div class="card feature-card">
         <div class="card-body">
           <div class="feature-id">F-AUTH-03</div>
-          <div class="feature-title">Google OAuth Sign-In</div>
+          <div class="feature-title">Google Sign-In</div>
           <ul class="feature-list">
-            <li>Opens Google consent screen via system browser</li>
-            <li>Redirect back via custom scheme (<code>cfb-stat-tracker://auth/callback</code>)</li>
-            <li>New Google users &rarr; team picker (step 2 of registration)</li>
-            <li>Returning Google users &rarr; straight to Home</li>
+            <li>"Continue with Google" button on login and register screens</li>
+            <li>Opens Google consent screen in browser, returns to app on completion</li>
+            <li>New Google users see the team picker (Step 2 of registration)</li>
+            <li>Returning Google users go straight to Home</li>
           </ul>
         </div>
       </div>
@@ -357,21 +274,21 @@
           <div class="feature-id">F-AUTH-04</div>
           <div class="feature-title">Guest Access</div>
           <ul class="feature-list">
-            <li>"Continue without account" on login screen</li>
-            <li>Browse all public data (games, teams, rankings)</li>
-            <li>Attendance marking requires sign-in (Alert prompt)</li>
+            <li>"Continue without account" option on login screen</li>
+            <li>Guests can browse all public data (games, teams, rankings)</li>
+            <li>Marking attendance or earning achievements requires sign-in (prompt shown)</li>
+            <li>Settings shows "Sign In" button instead of "Sign Out"</li>
           </ul>
         </div>
       </div>
       <div class="card feature-card">
         <div class="card-body">
           <div class="feature-id">F-AUTH-05</div>
-          <div class="feature-title">Session Management</div>
+          <div class="feature-title">Session Persistence</div>
           <ul class="feature-list">
-            <li>Session persisted to AsyncStorage (survives app close)</li>
-            <li>Auto-refresh tokens prevent silent expiry</li>
-            <li>Splash screen held until fonts loaded AND session checked</li>
-            <li>Profile hydrated on every SIGNED_IN / TOKEN_REFRESHED event</li>
+            <li>User stays signed in across app closes and reopens</li>
+            <li>No flash of login screen on cold start &mdash; splash screen shown until session is verified</li>
+            <li>Favorite team and profile loaded automatically on session restore</li>
           </ul>
         </div>
       </div>
@@ -381,14 +298,13 @@
           <div class="feature-title">Sign Out</div>
           <ul class="feature-list">
             <li>Confirmation dialog before sign out</li>
-            <li>Clears Supabase session + all Zustand user state</li>
-            <li>Redirects to login screen</li>
+            <li>Clears all user state and returns to login screen</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Home Features -->
+    <!-- Home Dashboard Features -->
     <div class="epic-header">
       <div class="epic-num">H</div>
       <h2>Home Dashboard</h2>
@@ -396,18 +312,57 @@
     <div class="epic-body">
       <div class="card feature-card">
         <div class="card-body">
-          <div class="feature-id">F-HOME-01 through F-HOME-09</div>
-          <div class="feature-title">Dashboard Components</div>
+          <div class="feature-id">F-HOME-01</div>
+          <div class="feature-title">Favorite Team Banner</div>
           <ul class="feature-list">
-            <li><strong>Banner:</strong> Gradient fade from team color, team logo (xl), team name</li>
-            <li><strong>Hero Stat:</strong> Giant number &mdash; total games attended, color-coded by favorite team</li>
-            <li><strong>Quick Stats Grid (2&times;2):</strong> Stadiums | Teams | Conferences | Decades</li>
-            <li><strong>Favorite Team Record:</strong> W-L-T comparison bar (proportional segments)</li>
-            <li><strong>Game Quality:</strong> Closest game + biggest blowout witnessed</li>
-            <li><strong>Highlights:</strong> Most watched team, home base stadium, avg score, bowl games, season range</li>
-            <li><strong>Top Teams:</strong> Top 5 most-watched with logos, game counts, W-L records</li>
-            <li><strong>Conference Breakdown:</strong> Horizontal bar chart per conference</li>
-            <li><strong>Empty State:</strong> "No Games Yet" with CTA to Games tab</li>
+            <li>Gradient banner using the user's favorite team color</li>
+            <li>Shows team logo (large) when favorite team is set</li>
+            <li>Displays team name or "CFB STAT TRACKER" as fallback</li>
+            <li>Subtitle: "MY CFB PASSPORT" or "YOUR GAME ATTENDANCE TRACKER"</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-HOME-02</div>
+          <div class="feature-title">Hero Stat</div>
+          <ul class="feature-list">
+            <li>Large, prominent number showing total games attended</li>
+            <li>Colored to match favorite team</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-HOME-03</div>
+          <div class="feature-title">Quick Stats Grid (2&times;2)</div>
+          <ul class="feature-list">
+            <li>Stadiums visited | Teams seen | Conferences represented | Decades spanned</li>
+            <li>Each stat in a colored card</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-HOME-04</div>
+          <div class="feature-title">Favorite Team Record</div>
+          <ul class="feature-list">
+            <li>Only shown when user has a favorite team AND has attended their games</li>
+            <li>Proportional W-L-T comparison bar (green wins / gold ties / red losses)</li>
+            <li>Subtitle: "[Team] record when you're in the stands (X games)"</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-HOME-05 through F-HOME-09</div>
+          <div class="feature-title">Additional Dashboard Sections</div>
+          <ul class="feature-list">
+            <li><strong>Game Quality:</strong> Closest game witnessed + biggest blowout witnessed</li>
+            <li><strong>Highlights:</strong> Most-watched team, home base stadium, avg score, bowl games, season range</li>
+            <li><strong>Top Teams:</strong> Top 5 most-watched with logos, game counts, W-L records (tappable)</li>
+            <li><strong>Conference Breakdown:</strong> Horizontal bar chart per conference with brand colors</li>
+            <li><strong>Empty State:</strong> "No Games Yet" with call-to-action to Games tab</li>
           </ul>
         </div>
       </div>
@@ -421,12 +376,41 @@
     <div class="epic-body">
       <div class="card feature-card">
         <div class="card-body">
-          <div class="feature-id">F-GAMES-01 through F-GAMES-03</div>
-          <div class="feature-title">Game Search & Cards</div>
+          <div class="feature-id">F-GAMES-01</div>
+          <div class="feature-title">Search Mode</div>
           <ul class="feature-list">
-            <li><strong>Search Mode:</strong> Season picker (1950&ndash;current) + team filter + search button</li>
-            <li><strong>My Games Mode:</strong> "X games attended" header, chronological list, pull-to-refresh</li>
-            <li><strong>GameCard:</strong> Team color strips, attended badge (gold glow), scores, venue, attendance, excitement index, quick attend toggle</li>
+            <li>Season picker: scrollable year chips (1950 through current year)</li>
+            <li>Team filter: searchable dropdown with team color indicators</li>
+            <li>Search button (styled with team color if a team is selected)</li>
+            <li>Results displayed as a scrollable list of Game Cards</li>
+            <li>Empty state: "No games found for [year]"</li>
+            <li>Season selection remembered across sessions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-GAMES-02</div>
+          <div class="feature-title">My Games Mode</div>
+          <ul class="feature-list">
+            <li>Header showing bold count: "X games attended"</li>
+            <li>Chronological list of all attended games</li>
+            <li>Pull-to-refresh support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-GAMES-03</div>
+          <div class="feature-title">Game Card</div>
+          <ul class="feature-list">
+            <li>Left/right color strips using each team's color</li>
+            <li>Gold checkmark badge on attended games (with glow effect)</li>
+            <li>Date line + bowl/postseason badge</li>
+            <li>Team logos, names, conferences, and score display</li>
+            <li>Score comparison bar (proportional to each team's score)</li>
+            <li>Footer: venue name, attendance, excitement index</li>
+            <li>Quick-attend toggle button (+ icon)</li>
           </ul>
         </div>
       </div>
@@ -444,13 +428,13 @@
           <div class="feature-title">Game Detail Components</div>
           <ul class="feature-list">
             <li><strong>Header Banner:</strong> Gradient from home team color, date, season/week, bowl badge</li>
-            <li><strong>Scoreboard (glassmorphic):</strong> Logos, rankings, names, scores, FINAL badge, winner glow</li>
-            <li><strong>Score Comparison Bar:</strong> Proportional horizontal (away | home)</li>
+            <li><strong>Scoreboard:</strong> Frosted glass card &mdash; logos, rankings, names, scores, FINAL badge, winner glow</li>
+            <li><strong>Score Comparison Bar:</strong> Proportional horizontal bar (away | home) with team colors</li>
             <li><strong>Game Info:</strong> Stadium, attendance, excitement, conference/neutral site flags</li>
-            <li><strong>Broadcast & Conditions:</strong> Weather, spread/O/U, TV network</li>
-            <li><strong>Scoring by Quarter:</strong> Q1-Q4 + OT table with team logos</li>
-            <li><strong>Attendance Toggle:</strong> "I Attended This Game" / "I Was There!" (auth required)</li>
-            <li><strong>Game Rating:</strong> 5-star rating (only when attended)</li>
+            <li><strong>Broadcast &amp; Conditions:</strong> Weather, spread/O/U, TV network</li>
+            <li><strong>Scoring by Quarter:</strong> Q1&ndash;Q4 + OT table with team logos</li>
+            <li><strong>Attendance Toggle:</strong> "I Attended This Game" / "I Was There!" (sign-in required)</li>
+            <li><strong>Game Rating:</strong> 5-star tap-to-rate (only shown when attended)</li>
           </ul>
         </div>
       </div>
@@ -464,14 +448,38 @@
     <div class="epic-body">
       <div class="card feature-card">
         <div class="card-body">
-          <div class="feature-id">F-TEAMS / F-TEAM / F-COMPARE</div>
-          <div class="feature-title">Teams, Profiles & Comparison</div>
+          <div class="feature-id">F-TEAMS-01 through F-TEAMS-03</div>
+          <div class="feature-title">Teams Tab</div>
           <ul class="feature-list">
-            <li><strong>Teams Tab:</strong> A-Z/Conference toggle, letter bar, search, 3-column grid of TeamGridItems</li>
-            <li><strong>Team Profile:</strong> Header banner with logo + gradient, all-time Winsipedia-style stat cards, personal stats (conditional)</li>
-            <li><strong>H2H Records:</strong> All-Time / My Games toggle, opponent list with logos and W-L-T</li>
-            <li><strong>Game History:</strong> All Games / My Games toggle, organized by season</li>
-            <li><strong>Compare Screen:</strong> Two team pickers, HeadToHeadBar, side-by-side stat cards, game history</li>
+            <li><strong>A-Z Mode:</strong> Horizontal letter bar (All + A&ndash;Z), search box, 3-column grid</li>
+            <li><strong>Conference Mode:</strong> Same grid, grouped by conference with section headers</li>
+            <li><strong>Team Card:</strong> Logo (with colored circle fallback), school name + mascot, tappable</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-TEAM-01 through F-TEAM-05</div>
+          <div class="feature-title">Team Profile</div>
+          <ul class="feature-list">
+            <li><strong>Header Banner:</strong> Gradient in team's color + logo (XL) + team name + mascot + "COMPARE TEAM" button</li>
+            <li><strong>All-Time Stats:</strong> Winsipedia-style stat cards &mdash; win%, wins, bowl wins, bowl games, AP poll weeks, recruiting rank</li>
+            <li><strong>Your Stats (conditional):</strong> Personal W-L record, games watched, bowl games, stadiums &mdash; only shown if signed in with attended games</li>
+            <li><strong>Head-to-Head:</strong> All-Time / My Games toggle, opponent list with logos and W-L-T records</li>
+            <li><strong>Game History:</strong> All Games / My Games toggle, organized by season with team-colored dividers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-COMPARE-01 through F-COMPARE-05</div>
+          <div class="feature-title">Compare Screen</div>
+          <ul class="feature-list">
+            <li>Two team pickers with search/autocomplete (pre-populated from team profile)</li>
+            <li>Overall H2H bar: proportional W-L with team logos + win counts + streak</li>
+            <li>Side-by-side stat comparison cards: win%, wins, bowls, poll weeks</li>
+            <li>Your H2H section (conditional &mdash; only if user attended matchups)</li>
+            <li>Game history: "All Games" / "My Games" toggle</li>
           </ul>
         </div>
       </div>
@@ -485,16 +493,74 @@
     <div class="epic-body">
       <div class="card feature-card">
         <div class="card-body">
-          <div class="feature-id">F-RANK-01 through F-RANK-04</div>
-          <div class="feature-title">Rankings System</div>
+          <div class="feature-id">F-RANK-01</div>
+          <div class="feature-title">All-Time Rankings (6 categories)</div>
           <ul class="feature-list">
-            <li><strong>All-Time (6 categories):</strong> Record, Wins, Bowl Games, Bowl Record, Weeks in AP Poll, Recruiting</li>
-            <li><strong>My Stats (3 categories):</strong> Most Watched, Best Record, Bowl Games</li>
-            <li><strong>Winsipedia-Style Bar Chart:</strong> Team-colored bars (40px wide, 200px tall), team logos on top, Y-axis scale labels, dashed grid lines</li>
-            <li><strong>Interactive Tooltip:</strong> Press/hold a bar to see team name, stat value, and overall record in a glassmorphic popup; bar highlights on press</li>
-            <li><strong>Team Store Enrichment:</strong> Falls back to cached team metadata (useTeamStore) when DB colors/logos are missing</li>
-            <li><strong>Display:</strong> Category chips, RankingBarChart (top 25), RankingRow table</li>
-            <li><strong>Detail Screen:</strong> Full-page bar chart + searchable list (up to 50 teams)</li>
+            <li><strong>All-Time Record</strong> &mdash; Best win percentage (minimum 100 games)</li>
+            <li><strong>All-Time Wins</strong> &mdash; Most total wins</li>
+            <li><strong>Bowl Games</strong> &mdash; Most bowl appearances</li>
+            <li><strong>Bowl Record</strong> &mdash; Best bowl win percentage (minimum 10 bowls)</li>
+            <li><strong>Weeks in AP Poll</strong> &mdash; Most weeks ranked in the AP Top 25</li>
+            <li><strong>Recruiting</strong> &mdash; Best average recruiting rank (minimum 5 years)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-RANK-02</div>
+          <div class="feature-title">My Stats Rankings (3 categories)</div>
+          <ul class="feature-list">
+            <li><strong>Most Watched</strong> &mdash; Teams ranked by games the user attended</li>
+            <li><strong>Best Record</strong> &mdash; Teams ranked by user's personal win percentage</li>
+            <li><strong>Bowl Games</strong> &mdash; Bowl games attended, grouped by team</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-RANK-03 through F-RANK-04</div>
+          <div class="feature-title">Rankings Display</div>
+          <ul class="feature-list">
+            <li>"All-Time" / "My Stats" toggle at the top</li>
+            <li>Horizontal scrollable category chips</li>
+            <li>Bar chart: top 25 teams with team-colored bars, logos, interactive tooltips on press</li>
+            <li>Ranking list below the chart with rank, logo, team name, stat value</li>
+            <li>Tapping any team navigates to their profile</li>
+            <li>Detail screen: full-page bar chart + searchable ranking list (up to 50 teams)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile & Settings -->
+    <div class="epic-header">
+      <div class="epic-num">P</div>
+      <h2>Profile & Settings</h2>
+    </div>
+    <div class="epic-body">
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-PROFILE-01 through F-PROFILE-07</div>
+          <div class="feature-title">Profile Screen</div>
+          <ul class="feature-list">
+            <li><strong>Header:</strong> Avatar (team logo or person icon), "Fan Profile" title, email, active seasons</li>
+            <li><strong>Favorite Team Card:</strong> Gradient card with team color + logo, tappable</li>
+            <li><strong>Quick Stats:</strong> Games attended | Stadiums visited | Teams seen</li>
+            <li><strong>Record Bar:</strong> Stacked horizontal bar (W + T + L) with segment labels</li>
+            <li><strong>Stadiums:</strong> Unique venues count, home base venue + visit count</li>
+            <li><strong>Helmet Stickers:</strong> "X / Y unlocked" + gradient progress bar</li>
+            <li><strong>Settings Link:</strong> Button to settings screen</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card feature-card">
+        <div class="card-body">
+          <div class="feature-id">F-SETTINGS-01 through F-SETTINGS-03</div>
+          <div class="feature-title">Settings Screen</div>
+          <ul class="feature-list">
+            <li><strong>Account Display:</strong> Email, sign-in method, Sign Out button (or "Sign In" for guests)</li>
+            <li><strong>Favorite Team:</strong> Text input pre-filled with current team, Save button, immediate update</li>
+            <li><strong>About:</strong> App version, data source attribution, inspiration credit</li>
           </ul>
         </div>
       </div>
@@ -515,29 +581,29 @@
         <table class="stat-table">
           <thead><tr><th>Sticker</th><th class="num-col">Requirement</th></tr></thead>
           <tbody>
-            <tr><td>First Down</td><td class="num-col">1</td></tr>
-            <tr><td>Veteran</td><td class="num-col">10</td></tr>
-            <tr><td>Superfan</td><td class="num-col">25</td></tr>
-            <tr><td>All-Conference</td><td class="num-col">50</td></tr>
-            <tr><td>Legend</td><td class="num-col">100</td></tr>
-            <tr><td>Hall of Fame</td><td class="num-col">200</td></tr>
+            <tr><td>First Down</td><td class="num-col">1 game</td></tr>
+            <tr><td>Veteran</td><td class="num-col">10 games</td></tr>
+            <tr><td>Superfan</td><td class="num-col">25 games</td></tr>
+            <tr><td>All-Conference</td><td class="num-col">50 games</td></tr>
+            <tr><td>Legend</td><td class="num-col">100 games</td></tr>
+            <tr><td>Hall of Fame</td><td class="num-col">200 games</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-header"><h3>Stadium & Era Milestones</h3></div>
+      <div class="card-header"><h3>Stadium &amp; Era Milestones</h3></div>
       <div class="card-body">
         <table class="stat-table">
           <thead><tr><th>Sticker</th><th>Requirement</th></tr></thead>
           <tbody>
             <tr><td>Road Warrior</td><td>5 unique stadiums</td></tr>
-            <tr><td>Stadium Collector</td><td>10 stadiums</td></tr>
-            <tr><td>National Tour</td><td>25 stadiums</td></tr>
+            <tr><td>Stadium Collector</td><td>10 unique stadiums</td></tr>
+            <tr><td>National Tour</td><td>25 unique stadiums</td></tr>
             <tr><td>Time Traveler</td><td>Games in 2 decades</td></tr>
-            <tr><td>Era Spanning</td><td>3 decades</td></tr>
-            <tr><td>Century Witness</td><td>4+ decades</td></tr>
+            <tr><td>Era Spanning</td><td>Games in 3 decades</td></tr>
+            <tr><td>Century Witness</td><td>Games in 4+ decades</td></tr>
           </tbody>
         </table>
       </div>
@@ -551,56 +617,46 @@
           <tbody>
             <tr><td>Bowl Bound</td><td>5 bowl games attended</td></tr>
             <tr><td>Blowout Witness</td><td>10 games with 30+ point margin</td></tr>
-            <tr><td>Nail Biter</td><td>10 games decided by &lt;7 points</td></tr>
+            <tr><td>Nail Biter</td><td>10 games decided by fewer than 7 points</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Design System -->
+    <!-- Design Requirements -->
     <div id="design" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">5</div>
-      <h2>Design System</h2>
+      <div class="section-icon">4</div>
+      <h2>Design Requirements</h2>
     </div>
 
     <div class="card">
-      <div class="card-header"><h3>Color Palette &mdash; Dark Matter</h3></div>
+      <div class="card-header"><h3>Overall Aesthetic</h3></div>
       <div class="card-body">
-        <p style="margin-bottom: 12px;"><strong>Dark Matter</strong> &mdash; warm orange primary, cool blue secondary, deep cosmic backgrounds</p>
-        <div class="color-grid">
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#0A0A0F;"></div>
-            <div class="swatch-info"><span class="swatch-name">Background</span><span class="swatch-hex">#0A0A0F</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#1A1A2E;"></div>
-            <div class="swatch-info"><span class="swatch-name">Surface</span><span class="swatch-hex">#1A1A2E</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#E88F3D;"></div>
-            <div class="swatch-info"><span class="swatch-name">Primary</span><span class="swatch-hex">#E88F3D</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#367FA9;"></div>
-            <div class="swatch-info"><span class="swatch-name">Secondary</span><span class="swatch-hex">#367FA9</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#EF4444;"></div>
-            <div class="swatch-info"><span class="swatch-name">Accent</span><span class="swatch-hex">#EF4444</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#EAEAF0;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text</span><span class="swatch-hex">#EAEAF0</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#8B8BA0;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text Secondary</span><span class="swatch-hex">#8B8BA0</span></div>
-          </div>
-          <div class="color-swatch">
-            <div class="swatch-preview" style="background:#4A4A5C;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text Muted</span><span class="swatch-hex">#4A4A5C</span></div>
-          </div>
-        </div>
+        <ul class="feature-list">
+          <li>Dark-themed, premium sports app look and feel</li>
+          <li>Inspired by Winsipedia's bold stat presentation</li>
+          <li>Glass/frosted card effects with subtle transparency and borders</li>
+          <li>Glow effects on key stat numbers and achievement badges</li>
+          <li>Gradient banners and accent elements using team colors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h3>Color Palette</h3></div>
+      <div class="card-body">
+        <table class="stat-table">
+          <thead><tr><th>Element</th><th>Color</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Background</td><td>Dark navy/charcoal</td><td>Layered surface system (base &rarr; card &rarr; elevated card)</td></tr>
+            <tr><td>Primary Accent</td><td>Warm orange</td><td>CTAs, active states, highlights</td></tr>
+            <tr><td>Secondary Accent</td><td>Cool blue</td><td>Supporting visuals, stat cards</td></tr>
+            <tr><td>Error/Loss</td><td>Red</td><td>Destructive actions, losing records</td></tr>
+            <tr><td>Win</td><td>Emerald green</td><td>Winning records, success states</td></tr>
+            <tr><td>Tie</td><td>Amber/gold</td><td>Ties, achievements, attended badges</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 12px;">Team-specific screens (team profile, game detail, compare) should use each team's own primary color rather than the app's default accents.</p>
       </div>
     </div>
 
@@ -608,65 +664,97 @@
       <div class="card-header"><h3>Typography</h3></div>
       <div class="card-body">
         <table class="stat-table">
-          <thead><tr><th>Style</th><th>Font</th><th>Size</th></tr></thead>
+          <thead><tr><th>Usage</th><th>Style</th></tr></thead>
           <tbody>
-            <tr><td>h1</td><td>Teko Bold</td><td>36px</td></tr>
-            <tr><td>h2</td><td>Teko SemiBold</td><td>28px</td></tr>
-            <tr><td>h3</td><td>Teko SemiBold</td><td>22px</td></tr>
-            <tr><td>Stat numbers</td><td>Teko Bold</td><td>40&ndash;64px</td></tr>
-            <tr><td>body1</td><td>Gudea Regular</td><td>16px</td></tr>
-            <tr><td>body2</td><td>Gudea Regular</td><td>14px</td></tr>
-            <tr><td>caption</td><td>Gudea Regular</td><td>12px</td></tr>
-            <tr><td>label</td><td>Gudea Bold</td><td>12px (letter-spaced)</td></tr>
+            <tr><td>Page headings</td><td>Bold display font, all-caps, letter-spaced</td></tr>
+            <tr><td>Stat numbers</td><td>Bold display font, oversized (40&ndash;64pt), with glow effect</td></tr>
+            <tr><td>Stat labels</td><td>Small caps, muted color, letter-spaced</td></tr>
+            <tr><td>Body text</td><td>Clean sans-serif, 14&ndash;16pt</td></tr>
+            <tr><td>Captions</td><td>Small sans-serif, 12pt, muted</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-header"><h3>Card Styles</h3></div>
+      <div class="card-header"><h3>Card Styles &amp; Theming</h3></div>
       <div class="card-body">
         <ul class="feature-list">
-          <li><strong>Glass cards:</strong> <code>rgba(255,255,255,0.04)</code> bg + <code>rgba(255,255,255,0.08)</code> border, 12px radius</li>
-          <li><strong>Glow effects:</strong> textShadow on stat numbers, shadowColor on badges</li>
-          <li><strong>Gradients:</strong> Linear gradients for banners, buttons, progress bars via <code>expo-linear-gradient</code></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Data Pipeline -->
-    <div id="pipeline" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">6</div>
-      <h2>Data Pipeline</h2>
-    </div>
-
-    <div class="card">
-      <div class="card-header"><h3>Initial Import</h3><span class="tag tag-section">import-data.ts</span></div>
-      <div class="card-body">
-        <ul class="feature-list">
-          <li>CSV import: conferences, teams, games from <code>cfbdata/data/</code> (batch size: 500)</li>
-          <li>API enrichment loop (1869&ndash;2025): venues, team colors/logos, betting, weather, media, rankings, ratings, coaches, recruiting, draft picks</li>
-          <li>250ms delay between API calls to respect rate limits</li>
+          <li><strong>Glass cards:</strong> Semi-transparent background with subtle border, rounded corners</li>
+          <li><strong>Elevated cards:</strong> Slightly brighter glass with stronger border</li>
+          <li><strong>Stat cards:</strong> Team-colored glow/shadow, large centered number, small label below</li>
+          <li><strong>Team Color Theming:</strong> Home banner, game detail, team profile, game cards, score bars, and rankings all use team-specific colors</li>
+          <li><strong>Conference Colors:</strong> Each conference has a distinct brand color for charts and labels</li>
         </ul>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-header"><h3>Ongoing Refresh</h3><span class="tag tag-section">update-scores.ts</span></div>
+      <div class="card-header"><h3>Interaction Patterns</h3></div>
       <div class="card-body">
         <ul class="feature-list">
-          <li>Auto-detects seasons with missing scores (<code>home_points IS NULL</code>)</li>
-          <li>Updates all enrichment tables per season</li>
-          <li>Delete-and-reinsert pattern for enrichment data</li>
-          <li><code>--games-only</code> flag for quick score-only updates</li>
-          <li>300ms delay between API calls</li>
+          <li>Pull-to-refresh on all scrollable data screens</li>
+          <li>Interactive bar chart: press-and-hold shows tooltip, tap navigates</li>
+          <li>Toggle switches for mode changes (All-Time / My Games, A-Z / Conference)</li>
+          <li>Pressable team names/logos navigate to team profile throughout</li>
+          <li>Every empty-data screen shows icon + heading + guidance + action button</li>
         </ul>
       </div>
     </div>
 
-    <!-- NFRs and Roadmap -->
+    <!-- Data Requirements -->
+    <div id="data" class="section-header" style="margin-top: 32px;">
+      <div class="section-icon">5</div>
+      <h2>Data Requirements</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h3>Historical Coverage</h3></div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Complete college football game records from 1869 to present</li>
+          <li>All FBS and FCS teams with logos, colors, conferences, and locations</li>
+          <li>All college football venues with capacity, location, and surface type</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h3>Enrichment Data</h3></div>
+      <div class="card-body">
+        <table class="stat-table">
+          <thead><tr><th>Data Type</th><th>Coverage</th></tr></thead>
+          <tbody>
+            <tr><td>Betting lines (spread, O/U)</td><td>~2003 onward</td></tr>
+            <tr><td>Game weather conditions</td><td>~2004 onward</td></tr>
+            <tr><td>TV broadcast network</td><td>All available</td></tr>
+            <tr><td>AP and Coaches poll rankings</td><td>~1936 onward</td></tr>
+            <tr><td>Advanced team ratings (SP+, ELO, SRS)</td><td>All available</td></tr>
+            <tr><td>Head coach records by year</td><td>~1950 onward</td></tr>
+            <tr><td>Team recruiting rankings</td><td>~2000 onward</td></tr>
+            <tr><td>NFL draft pick history</td><td>~1960 onward</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h3>User Data &amp; Freshness</h3></div>
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Game attendance records (which games the user attended)</li>
+          <li>Game ratings (1&ndash;5 stars, optional)</li>
+          <li>Favorite team preference</li>
+          <li>Achievement/sticker unlock history</li>
+          <li>Historical data is a one-time load; current season is refreshable</li>
+          <li>User data syncs in real-time on write</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Non-Functional Requirements -->
     <div id="nfr" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">7</div>
+      <div class="section-icon">6</div>
       <h2>Non-Functional Requirements</h2>
     </div>
 
@@ -675,33 +763,51 @@
         <table class="stat-table">
           <thead><tr><th>Category</th><th>Details</th></tr></thead>
           <tbody>
-            <tr><td><strong>Performance</strong></td><td>Persisted stores for instant cold start, team metadata cache, FlatList/SectionList virtualization</td></tr>
-            <tr><td><strong>Security</strong></td><td>RLS on all user-scoped tables, Supabase anon key (RLS enforces access), no client secrets</td></tr>
-            <tr><td><strong>Offline</strong></td><td>Requires internet; persisted stores provide cached UI shell</td></tr>
-            <tr><td><strong>Error Handling</strong></td><td>Network errors &rarr; Alert, RLS violations &rarr; re-auth prompt, missing data &rarr; empty states</td></tr>
+            <tr><td><strong>Performance</strong></td><td>App should feel instant on cold start; long lists scroll smoothly; team logos and colors available immediately</td></tr>
+            <tr><td><strong>Security</strong></td><td>User attendance and achievement data is private (users see only their own); game, team, and venue data is public; authentication tokens auto-refresh</td></tr>
+            <tr><td><strong>Offline</strong></td><td>Requires internet for data operations; previously loaded data persists for basic UI rendering</td></tr>
+            <tr><td><strong>Error Handling</strong></td><td>Network errors shown as clear messages; missing data shows empty states with guidance; session issues prompt re-authentication</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
+    <!-- Known Constraints -->
+    <div id="constraints" class="section-header" style="margin-top: 32px;">
+      <div class="section-icon">7</div>
+      <h2>Known Constraints</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <ul class="feature-list">
+          <li>Weather and betting data only available from ~2003 onward</li>
+          <li>Some historical teams may not have logos or complete metadata</li>
+          <li>No real-time live game scoring (manual refresh required)</li>
+          <li>No offline-first mode (requires internet connection)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Future Roadmap -->
     <div id="roadmap" class="section-header" style="margin-top: 32px;">
-      <div class="section-icon">9</div>
+      <div class="section-icon">8</div>
       <h2>Future Roadmap</h2>
     </div>
 
     <div class="card">
       <div class="card-body">
         <ul class="feature-list">
-          <li>Detailed stadium screen (<code>/stadium/[id]</code>)</li>
-          <li>Personal game notes (already in schema, not in UI)</li>
-          <li>Social sharing (game results, stat cards)</li>
-          <li>Push notifications (game reminders, sticker unlocks)</li>
-          <li>Offline support with local SQLite cache</li>
-          <li>Advanced filtering (date range, weather, attendance size)</li>
+          <li>Detailed stadium screen (capacity, surface, home team, user visit history)</li>
+          <li>Personal game notes and memories</li>
+          <li>Social sharing (share stat cards, game results)</li>
+          <li>Push notifications (game reminders, achievement unlocks)</li>
+          <li>Offline mode with local data cache</li>
+          <li>Advanced filtering (by date range, weather, attendance size, rivalry games)</li>
           <li>Player stats integration</li>
-          <li>Live scoreboard with real-time subscriptions</li>
+          <li>Live scoreboard with real-time updates</li>
           <li>Community leaderboards</li>
-          <li>Photo/memory attachment per attended game</li>
+          <li>Photo/memory attachments per attended game</li>
         </ul>
       </div>
     </div>
@@ -715,14 +821,14 @@
       <div class="sb-body">
         <ul class="toc-list">
           <li><a href="#overview">1. Product Overview</a></li>
-          <li><a href="#architecture">2. Technical Architecture</a></li>
-          <li><a href="#navigation">3. Navigation</a></li>
-          <li><a href="#features">4. Feature Specs</a></li>
+          <li><a href="#navigation">2. Navigation</a></li>
+          <li><a href="#features">3. Feature Requirements</a></li>
           <li><a href="#achievements">Helmet Stickers</a></li>
-          <li><a href="#design">5. Design System</a></li>
-          <li><a href="#pipeline">6. Data Pipeline</a></li>
-          <li><a href="#nfr">7. Non-Functional Reqs</a></li>
-          <li><a href="#roadmap">9. Future Roadmap</a></li>
+          <li><a href="#design">4. Design Requirements</a></li>
+          <li><a href="#data">5. Data Requirements</a></li>
+          <li><a href="#nfr">6. Non-Functional Reqs</a></li>
+          <li><a href="#constraints">7. Constraints</a></li>
+          <li><a href="#roadmap">8. Roadmap</a></li>
         </ul>
       </div>
     </div>
@@ -733,51 +839,38 @@
         <ul>
           <li><strong>44</strong> Feature specs</li>
           <li><strong>15</strong> Helmet Sticker achievements</li>
-          <li><strong>7</strong> Core DB tables</li>
-          <li><strong>8</strong> Enrichment tables</li>
-          <li><strong>13</strong> Screens</li>
-          <li><strong>3</strong> Zustand stores</li>
+          <li><strong>12</strong> Screens</li>
+          <li><strong>5</strong> Tab navigation</li>
           <li><strong>2</strong> Auth providers</li>
+          <li><strong>6</strong> Ranking categories</li>
+          <li><strong>3</strong> Personal ranking categories</li>
         </ul>
       </div>
     </div>
 
     <div class="sidebar-card">
-      <div class="sb-header">Tech Stack</div>
-      <div class="sb-body">
-        <span class="tech-badge highlight">Expo 54</span>
-        <span class="tech-badge highlight">TypeScript</span>
-        <span class="tech-badge highlight">Supabase</span>
-        <span class="tech-badge">React Native 0.81</span>
-        <span class="tech-badge">Zustand</span>
-        <span class="tech-badge">Expo Router</span>
-        <span class="tech-badge">CFBD API</span>
-        <span class="tech-badge">Google OAuth</span>
-      </div>
-    </div>
-
-    <div class="sidebar-card">
-      <div class="sb-header">Platform Support</div>
+      <div class="sb-header">Platform</div>
       <div class="sb-body">
         <ul>
           <li>iOS (iPhone + iPad)</li>
-          <li>Android (edge-to-edge)</li>
-          <li>Bundle: <code>com.cfbstattracker.app</code></li>
-          <li>Scheme: <code>cfb-stat-tracker://</code></li>
+          <li>Android</li>
+          <li>Dark premium theme</li>
+          <li>Winsipedia-inspired stats</li>
         </ul>
       </div>
     </div>
 
     <div class="sidebar-card">
-      <div class="sb-header">Known Limitations</div>
+      <div class="sb-header">Data Coverage</div>
       <div class="sb-body">
         <ul>
-          <li>Weather/betting data 2003+ only</li>
-          <li>Soft foreign keys (teams by name)</li>
-          <li>No pagination on large queries</li>
-          <li>Requires internet connectivity</li>
-          <li>No live score updates</li>
-          <li>Google OAuth URI changes per network in Expo Go</li>
+          <li>Game records from <strong>1869</strong></li>
+          <li>All FBS + FCS teams</li>
+          <li>All venues with metadata</li>
+          <li>Poll rankings from 1936</li>
+          <li>Betting/weather from 2003</li>
+          <li>Recruiting from 2000</li>
+          <li>NFL draft from 1960</li>
         </ul>
       </div>
     </div>
@@ -787,7 +880,7 @@
 <!-- Footer -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>CFB Stat Tracker &mdash; Product Requirements Document v1.0</p>
+    <p>CFB Stat Tracker &mdash; Product Requirements Document v2.0</p>
     <p>Last updated: February 16, 2026</p>
   </div>
 </footer>
@@ -796,7 +889,6 @@
 <button class="back-to-top" onclick="window.scrollTo({top:0})">&#8593;</button>
 
 <script>
-  // Back to top visibility
   window.addEventListener('scroll', () => {
     document.querySelector('.back-to-top').classList.toggle('visible', window.scrollY > 400);
   });
