@@ -441,7 +441,10 @@
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> view all-time college football rankings, <strong>so that</strong> I can explore historical team performance.</p>
           <ul class="checklist">
             <li><span class="check check-done">&#10003;</span> 6 categories: Record, Wins, Bowl Games, Bowl Record, Weeks in Poll, Recruiting</li>
-            <li><span class="check check-done">&#10003;</span> Bar chart visualization (top 25 with team-colored bars)</li>
+            <li><span class="check check-done">&#10003;</span> Winsipedia-style bar chart (top 25): team-colored bars, logos on top, Y-axis labels, dashed grid lines</li>
+            <li><span class="check check-done">&#10003;</span> Interactive tooltip on press: team name, stat value, overall record</li>
+            <li><span class="check check-done">&#10003;</span> Bar highlight on press with lightened team color</li>
+            <li><span class="check check-done">&#10003;</span> Team store enrichment fallback for missing colors/logos</li>
             <li><span class="check check-done">&#10003;</span> Tap team &rarr; team profile</li>
           </ul>
         </div>
@@ -463,8 +466,9 @@
           <div class="feature-title">View Ranking Detail</div>
           <p class="story-statement"><strong>As a</strong> user, <strong>I want to</strong> drill into a specific ranking category for the full list.</p>
           <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Full-page ranking screen</li>
-            <li><span class="check check-done">&#10003;</span> Bar chart at top + searchable list below</li>
+            <li><span class="check check-done">&#10003;</span> Full-page ranking screen with Winsipedia-style bar chart</li>
+            <li><span class="check check-done">&#10003;</span> Bar chart at top (team-colored bars + logos + interactive tooltip) + searchable list below</li>
+            <li><span class="check check-done">&#10003;</span> Same enrichment and tooltip behavior as main Rankings tab</li>
           </ul>
         </div>
       </div>
@@ -651,7 +655,7 @@
           <div class="story-meta"><span class="story-id">US-9.1</span><span class="tag tag-p0">P0</span><span class="tag tag-done">Done</span></div>
           <div class="feature-title">Dark Theme</div>
           <ul class="checklist">
-            <li><span class="check check-done">&#10003;</span> Dark background (#0D1117) throughout</li>
+            <li><span class="check check-done">&#10003;</span> Dark Matter palette: background #0A0A0F, surface #1A1A2E, primary #E88F3D (orange), secondary #367FA9 (blue)</li>
             <li><span class="check check-done">&#10003;</span> Glassmorphic cards, glow effects, gradient banners</li>
           </ul>
         </div>
@@ -682,7 +686,8 @@
           <div class="feature-title">Winsipedia-Inspired Stat Cards</div>
           <ul class="checklist">
             <li><span class="check check-done">&#10003;</span> WinsipediaStatCard: big number + label + rank + glow</li>
-            <li><span class="check check-done">&#10003;</span> HeadToHeadBar, RankingBarChart components</li>
+            <li><span class="check check-done">&#10003;</span> HeadToHeadBar: proportional comparison bars</li>
+            <li><span class="check check-done">&#10003;</span> RankingBarChart: Winsipedia-style with team-colored bars, logos, tooltips, Y-axis labels, grid lines</li>
           </ul>
         </div>
       </div>

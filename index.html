@@ -490,7 +490,10 @@
           <ul class="feature-list">
             <li><strong>All-Time (6 categories):</strong> Record, Wins, Bowl Games, Bowl Record, Weeks in AP Poll, Recruiting</li>
             <li><strong>My Stats (3 categories):</strong> Most Watched, Best Record, Bowl Games</li>
-            <li><strong>Display:</strong> Category chips, RankingBarChart (top 25, team-colored bars + logos), RankingRow table</li>
+            <li><strong>Winsipedia-Style Bar Chart:</strong> Team-colored bars (40px wide, 200px tall), team logos on top, Y-axis scale labels, dashed grid lines</li>
+            <li><strong>Interactive Tooltip:</strong> Press/hold a bar to see team name, stat value, and overall record in a glassmorphic popup; bar highlights on press</li>
+            <li><strong>Team Store Enrichment:</strong> Falls back to cached team metadata (useTeamStore) when DB colors/logos are missing</li>
+            <li><strong>Display:</strong> Category chips, RankingBarChart (top 25), RankingRow table</li>
             <li><strong>Detail Screen:</strong> Full-page bar chart + searchable list (up to 50 teams)</li>
           </ul>
         </div>
@@ -561,40 +564,41 @@
     </div>
 
     <div class="card">
-      <div class="card-header"><h3>Color Palette</h3></div>
+      <div class="card-header"><h3>Color Palette &mdash; Dark Matter</h3></div>
       <div class="card-body">
+        <p style="margin-bottom: 12px;"><strong>Dark Matter</strong> &mdash; warm orange primary, cool blue secondary, deep cosmic backgrounds</p>
         <div class="color-grid">
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#0D1117;"></div>
-            <div class="swatch-info"><span class="swatch-name">Background</span><span class="swatch-hex">#0D1117</span></div>
+            <div class="swatch-preview" style="background:#0A0A0F;"></div>
+            <div class="swatch-info"><span class="swatch-name">Background</span><span class="swatch-hex">#0A0A0F</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#161B22;"></div>
-            <div class="swatch-info"><span class="swatch-name">Surface</span><span class="swatch-hex">#161B22</span></div>
+            <div class="swatch-preview" style="background:#1A1A2E;"></div>
+            <div class="swatch-info"><span class="swatch-name">Surface</span><span class="swatch-hex">#1A1A2E</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#00C896;"></div>
-            <div class="swatch-info"><span class="swatch-name">Primary</span><span class="swatch-hex">#00C896</span></div>
+            <div class="swatch-preview" style="background:#E88F3D;"></div>
+            <div class="swatch-info"><span class="swatch-name">Primary</span><span class="swatch-hex">#E88F3D</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#F5A623;"></div>
-            <div class="swatch-info"><span class="swatch-name">Secondary</span><span class="swatch-hex">#F5A623</span></div>
+            <div class="swatch-preview" style="background:#367FA9;"></div>
+            <div class="swatch-info"><span class="swatch-name">Secondary</span><span class="swatch-hex">#367FA9</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#FF4757;"></div>
-            <div class="swatch-info"><span class="swatch-name">Accent</span><span class="swatch-hex">#FF4757</span></div>
+            <div class="swatch-preview" style="background:#EF4444;"></div>
+            <div class="swatch-info"><span class="swatch-name">Accent</span><span class="swatch-hex">#EF4444</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#F0F6FC;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text</span><span class="swatch-hex">#F0F6FC</span></div>
+            <div class="swatch-preview" style="background:#EAEAF0;"></div>
+            <div class="swatch-info"><span class="swatch-name">Text</span><span class="swatch-hex">#EAEAF0</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#8B949E;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text Secondary</span><span class="swatch-hex">#8B949E</span></div>
+            <div class="swatch-preview" style="background:#8B8BA0;"></div>
+            <div class="swatch-info"><span class="swatch-name">Text Secondary</span><span class="swatch-hex">#8B8BA0</span></div>
           </div>
           <div class="color-swatch">
-            <div class="swatch-preview" style="background:#484F58;"></div>
-            <div class="swatch-info"><span class="swatch-name">Text Muted</span><span class="swatch-hex">#484F58</span></div>
+            <div class="swatch-preview" style="background:#4A4A5C;"></div>
+            <div class="swatch-info"><span class="swatch-name">Text Muted</span><span class="swatch-hex">#4A4A5C</span></div>
           </div>
         </div>
       </div>
